@@ -1,0 +1,24 @@
+<div>
+    Search By :
+    <select name="searchField" [(ngModel)]="searchField">
+        <option value="">--Select--</option>
+        <option value="make">Make</option>
+        <option value="model">Model</option>
+        <option value="year">Year</option>
+    </select>
+    <input type="text" [(ngModel)]="searchFieldValue"  />
+    <input type="button" value="GO" (click)="searchCars();" />
+    <table class="carList">
+        <thead>
+            <tr><th>Name</th><th>Year</th></tr>
+        </thead>
+        <tbody>
+            <!--<tr *ngFor="let car of cars | orderBy:'year'">-->
+            <tr *ngFor="let car of cars">
+                <td>{{car.make}} {{car.model}}</td>
+                <td>{{car.year}}</td>
+                <td><img width="100" height="100" [src]="imageUrl+car.logo"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
