@@ -24,7 +24,11 @@ public class CarService {
         return carDAO.save(car);
     }
 
-    public Car readCar( String fieldValue) {
+    public Car readCar( Integer fieldValue) {
         return carDAO.getCar(fieldValue);
+    }
+
+    public Car readDetails(String vinFieldValue) {
+        return carDAO.getDetails(vinFieldValue);
     }
 }

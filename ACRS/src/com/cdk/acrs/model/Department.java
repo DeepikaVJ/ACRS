@@ -1,28 +1,30 @@
 package com.cdk.acrs.model;
+import javax.persistence.*;
 
+@Entity
+@Table(name = "departments")
 public class Department {
+    @Id
+            @GeneratedValue(strategy = GenerationType.)
     int departmentId;
     String name;
-    int numberOftechnicians;
+    int numberOfTechnicians;
 
     public Department() {
     }
 
-    public Department(String name, int numberOftechnicians) {
-
+    public Department(String name, int numberOfTechnicians) {
         this.name = name;
-        this.numberOftechnicians = numberOftechnicians;
+        this.numberOfTechnicians = numberOfTechnicians;
     }
 
-    public Department(int departmentId, String name, int numberOftechnicians) {
-
+    public Department(int departmentId, String name, int numberOfTechnicians) {
         this.departmentId = departmentId;
         this.name = name;
-        this.numberOftechnicians = numberOftechnicians;
+        this.numberOfTechnicians = numberOfTechnicians;
     }
 
     public int getDepartmentId() {
-
         return departmentId;
     }
 
@@ -39,10 +41,10 @@ public class Department {
     }
 
     public int getNumberOftechnicians() {
-        return numberOftechnicians;
+        return numberOfTechnicians;
     }
 
-    public void setNumberOftechnicians(int numberOftechnicians) {
-        this.numberOftechnicians = numberOftechnicians;
+    public void setNumberOftechnicians(int numberOfTechnicians) {
+        this.numberOfTechnicians = numberOfTechnicians;
     }
 }

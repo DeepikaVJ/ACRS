@@ -1,6 +1,6 @@
 "use strict";
 class Car {
-    constructor(make, model, trim, year, customerID) {
+    constructor(make, model, year, trim, customer) {
         this.make = "";
         this.model = "";
         this.year = "";
@@ -9,7 +9,7 @@ class Car {
         this.model = model;
         this.year = year;
         this.trim = trim;
-        this.customerID = customerID;
+        this.customer = customer;
     }
 }
 exports.Car = Car;

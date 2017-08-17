@@ -16,7 +16,7 @@ public class CarController {
     CarService carService;
 
     @RequestMapping(value = "/car/vin/{vinFieldValue}",produces = "application/json" ,method = RequestMethod.GET)
-    public Car readCarAsJson(@PathVariable String vinFieldValue){
+    public Car readCarAsJson(@PathVariable Integer vinFieldValue){
         return carService.readCar(vinFieldValue);
     }
 
@@ -32,5 +32,10 @@ public class CarController {
         return "Car with vin '"+value+" ' added successfully!";
     }
 
+
+    @RequestMapping(value = "/details/vin/{vinFieldValue}",produces = "application/json" ,method = RequestMethod.GET)
+    public Car readDetailsAsJson(@PathVariable String vinFieldValue){
+        return carService.readDetails(vinFieldValue);
+    }
 
 }

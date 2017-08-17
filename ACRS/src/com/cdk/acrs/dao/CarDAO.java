@@ -24,7 +24,12 @@ public class CarDAO {
 
     }
 
-    public Car getCar(String fieldValue) {
-        return (Car) (entityManager.createQuery("from Car where vin = " + "'" + fieldValue + "'")).getSingleResult();
+    public Car getCar(Integer fieldValue) {
+        //return (Car) (entityManager.createQuery("from Car where vin = " + "'" + fieldValue + "'")).getSingleResult();
+        return entityManager.find(Car.class,fieldValue);
+    }
+
+    public Car getDetails(String fieldValue) {
+        return (Car) (entityManager.createQuery("from Car,Customer where vin = " + "'" + fieldValue + "'" + "and Car.customerId = Customer.customerId")).getSingleResult();
     }
 }

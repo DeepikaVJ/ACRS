@@ -13,7 +13,7 @@ import {CustomerDetailComponent} from "./customerdetail.component";
 @NgModule({
 	imports:[BrowserModule,FormsModule,HttpModule],
 	declarations:[CarSearchComponent,CarDetailComponent,CustomerDetailComponent],
-	bootstrap:[CustomerDetailComponent]
+	bootstrap:[CarDetailComponent ]
 })
 export class AppModule{
 }

@@ -12,10 +12,13 @@ import {Customer} from "./customer";
             <input type='number' required [(ngModel)]='vinSearchFieldValue'>
             <input type='button' value='ShowDetails' (click)='showDetails();'/> <br/>
             <h1>Customer Details</h1>
-            CustomerID: <h2 *ngIf="customer.customerId">{{customer.customerId}} </h2>
-            Name: <h2 *ngIf='customer.name'> {{customer.name}}</h2>          
-            Address<h2 *ngIf='customer.address'>{{customer.address}} </h2>
-            Contact <h2 *ngIf='customer.contact'>{{customer.contact}} </h2>  
+            
+            <!--Customer Object: <h2 *ngIf="customer">{{customer}} </h2>-->
+            CustomerID: <h2 *ngIf='customer?.name'>{{customer?.customerId}} </h2>
+            
+            Name: <h2 *ngIf='customer?.name'> {{customer?.name}}</h2>          
+            Address<h2 *ngIf='customer?.address'>{{customer?.address}} </h2>
+            Contact <h2 *ngIf='customer?.contact'>{{customer?.contact}} </h2>  
         </div>`
 
 })
@@ -46,6 +49,7 @@ export class CustomerDetailComponent implements OnInit{
         var options = new RequestOptions({headers: requestHeaders});
 
         this.http.get(searchURL, options).subscribe(res => this.customer = res.json());
+
 
     }
 }

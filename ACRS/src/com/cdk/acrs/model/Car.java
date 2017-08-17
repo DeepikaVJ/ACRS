@@ -17,6 +17,7 @@ public class Car {
     @Column(length = 20, nullable = false)
     private String model;
 
+
     @Column(nullable = false)
     private int year;
 
@@ -47,6 +48,14 @@ public class Car {
         this.customer = customer;
     }
 
+
+    public Customer getCustomer() {
+        return customer;
+    }
+
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
+    }
 
     public int getVin() {
         return vin;

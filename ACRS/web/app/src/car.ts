@@ -1,3 +1,5 @@
+import {Customer} from "./customer";
+
 export class Car {
 
 
@@ -6,14 +8,14 @@ export class Car {
     model: string = "";
     year: string = "";
     trim: string = "";
-    customerID: number;
+    customer: Customer;
 
-    constructor(make: string, model: string, trim: string, year: string,  customerID: number) {
+    constructor(make: string, model: string, year: string, trim: string, customer: Customer) {
         this.make = make;
         this.model = model;
         this.year = year;
         this.trim = trim;
-        this.customerID = customerID;
+        this.customer = customer;
     }
 
 }

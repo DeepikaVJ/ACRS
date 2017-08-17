@@ -19,9 +19,8 @@ let CarDetailComponent = class CarDetailComponent {
         // this.car = new Car('Audi','A4','2017','VT','audi-a4.png');
     }
     showDetails() {
-        console.log("Inside showDetails()!!!!");
+        console.log("Inside cardetail.component.showDetails()!!!!");
         var searchURL = "";
-        //console.log(this.searchField);
         console.log(this.vinSearchFieldValue);
         searchURL = "/rest/car/vin/" + this.vinSearchFieldValue;
         var requestHeaders = new http_1.Headers({ 'Accept': 'application/json' });

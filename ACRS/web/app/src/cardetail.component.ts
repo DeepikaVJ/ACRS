@@ -23,11 +23,9 @@ export class CarDetailComponent {
     }
 
     showDetails() {
-        console.log("Inside showDetails()!!!!");
+        console.log("Inside cardetail.component.showDetails()!!!!");
 
         var searchURL = "";
-
-        //console.log(this.searchField);
         console.log(this.vinSearchFieldValue);
         searchURL = "/rest/car/vin/" + this.vinSearchFieldValue;
         var requestHeaders = new Headers({'Accept': 'application/json'});
