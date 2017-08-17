@@ -1,13 +1,18 @@
 package com.cdk.acrs.model;
+
 import javax.persistence.*;
 
 @Entity
 @Table(name = "departments")
 public class Department {
     @Id
-            @GeneratedValue(strategy = GenerationType.)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     int departmentId;
+
+    @Column(nullable = false,length = 20)
     String name;
+
+    @Column(nullable = false,length = 20)
     int numberOfTechnicians;
 
     public Department() {
