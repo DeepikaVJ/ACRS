@@ -25,7 +25,7 @@ public class CustomerDAO {
 
     }
 
-    public Customer getCustomers(int fieldValue) {
-        return (Customer) (entityManager.createQuery("from Customer where customerId  = "+"'"+fieldValue+"'")).getSingleResult();
+    public Customer getCustomer(String fieldValue) {
+        return (Customer) (entityManager.createQuery("from Customer where customerId="+"'"+fieldValue+"'")).getSingleResult();
     }
 }

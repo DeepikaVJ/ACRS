@@ -16,8 +16,8 @@ public class CarController {
     CarService carService;
 
     @RequestMapping(value = "/car/vin/{vinFieldValue}",produces = "application/json" ,method = RequestMethod.GET)
-    public Collection<Car> readCarAsJson(@PathVariable String vinFieldValue){
-        return carService.readCars(vinFieldValue);
+    public Car readCarAsJson(@PathVariable String vinFieldValue){
+        return carService.readCar(vinFieldValue);
     }
 
     @RequestMapping(value = "/cars",produces = "application/json" ,method = RequestMethod.GET)

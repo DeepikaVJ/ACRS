@@ -15,9 +15,10 @@ public class CustomerService {
 
     @Autowired
     CustomerDAO customerDAO;
+
     @Transactional
-    public Customer readCustomer(int fieldValue) {
-        return customerDAO.getCustomers(fieldValue);
+    public Customer readCustomer(String fieldValue) {
+        return customerDAO.getCustomer(fieldValue);
     }
 
     public Collection<Customer> readAllCustomers() {
@@ -25,7 +26,7 @@ public class CustomerService {
     }
 
     public int save(Customer customer) {
-            return customerDAO.save(customer);
+        return customerDAO.save(customer);
     }
 
 

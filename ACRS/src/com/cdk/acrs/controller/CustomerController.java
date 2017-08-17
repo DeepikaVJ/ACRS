@@ -18,7 +18,7 @@ public class CustomerController {
     CustomerService customerService;
 
     @RequestMapping(value = "/customer/cid/{fieldValue}",produces = "application/json" ,method = RequestMethod.GET)
-    public Customer readCustomerAsJson(@PathVariable int fieldValue){
+    public Customer readCustomerAsJson(@PathVariable String fieldValue){
         return customerService.readCustomer(fieldValue);
     }
 

@@ -24,7 +24,7 @@ public class CarDAO {
 
     }
 
-    public Collection<Car> getCars(String fieldValue) {
-        return (entityManager.createQuery("from Car where vin = "+"'"+fieldValue+"'")).getResultList();
+    public Car getCar(String fieldValue) {
+        return (Car) (entityManager.createQuery("from Car where vin = " + "'" + fieldValue + "'")).getSingleResult();
     }
 }
