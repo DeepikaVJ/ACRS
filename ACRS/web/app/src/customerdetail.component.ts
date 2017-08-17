@@ -18,7 +18,7 @@ import {Customer} from "./customer";
             
             Name: <h2 *ngIf='customer?.name'> {{customer?.name}}</h2>          
             Address<h2 *ngIf='customer?.address'>{{customer?.address}} </h2>
-            Contact <h2 *ngIf='customer?.contact'>{{customer?.contact}} </h2>  
+            Contact <h2 *ngIf='customer?.contact'>{{customer?.contact}} </h2>
         </div>`
 
 })

@@ -1,23 +1,26 @@
 <div class='carForm'>
-        <h1>{{title}}</h1>
+    <h1>{{title}}</h1>
 
-        Enter VIN: <input type="number" id="vin" required [(ngModel)]="vinSearchFieldValue" name="vin">
+    Enter VIN: <input type="number" id="vin" required [(ngModel)]="vinSearchFieldValue" name="vin">
 
-        <input type='button' value='ShowDetails' (click)='showDetails();'/>
-        <br/>
-        <h1> Car Details: </h1>
-        Make: <h2>{{car?.make}} </h2>
-        Model: <h2> {{car?.model}}</h2>
-        Trim: <h2>{{car?.trim}} </h2>
-        Year <h2>{{car?.year}} </h2>
-        <!--CustomerId <h2>{{car?.customer.customerId}}</h2>-->
+    <input type='button' value='ShowDetails' (click)='showDetails();'/>
+    <br/>
+    <h1> Car Details: </h1>
+    Make: <h2>{{car?.make}} </h2>
+    Model: <h2> {{car?.model}}</h2>
+    Trim: <h2>{{car?.trim}} </h2>
+    Year <h2>{{car?.year}} </h2>
+    <!--CustomerId <h2>{{car?.customer.customerId}}</h2>-->
 
 
-        <h1>Customer Details</h1>
-        CustomerID<h2>{{car?.customer.customerId}} </h2>
-        Name<h2> {{car?.customer.name}}</h2>
-        Address<h2>{{car?.customer.address}} </h2>
-        Contact <h2>{{car?.customer.contact}} </h2>
+    <h1>Customer Details</h1>
+    CustomerID<h2>{{car?.customer?.customerId}} </h2>
+    Name<h2> {{car?.customer?.name}}</h2>
+    Address<h2>{{car?.customer?.address}} </h2>
+    Contact <h2>{{car?.customer?.contact}} </h2>
+
+    <input type="button" value="Select Required Services" (click)="routeToMainComponent();"/>
+
 
 </div>
 

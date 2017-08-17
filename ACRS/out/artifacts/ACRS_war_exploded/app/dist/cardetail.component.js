@@ -10,13 +10,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 const core_1 = require("@angular/core");
 const http_1 = require("@angular/http");
+const router_1 = require("@angular/router");
 let CarDetailComponent = class CarDetailComponent {
-    constructor(http) {
+    constructor(http, router) {
         this.http = http;
+        this.router = router;
         this.title = "Customer-Car Detail Form";
-        // imageUrl:string ="images/";
         this.vinSearchFieldValue = "";
-        // this.car = new Car('Audi','A4','2017','VT','audi-a4.png');
     }
     showDetails() {
         console.log("Inside cardetail.component.showDetails()!!!!");
@@ -27,13 +27,17 @@ let CarDetailComponent = class CarDetailComponent {
         var options = new http_1.RequestOptions({ headers: requestHeaders });
         this.http.get(searchURL, options).subscribe(res => this.car = res.json());
     }
+    routeToMainComponent() {
+        var departmentLink = ['/departments'];
+        this.router.navigate(departmentLink);
+    }
 };
 CarDetailComponent = __decorate([
     core_1.Component({
-        selector: 'acrs-app',
+        selector: 'cardetail',
         templateUrl: '../partials/cardetail.component.html',
     }), 
-    __metadata('design:paramtypes', [http_1.Http])
+    __metadata('design:paramtypes', [http_1.Http, router_1.Router])
 ], CarDetailComponent);
 exports.CarDetailComponent = CarDetailComponent;
 //# sourceMappingURL=cardetail.component.js.map

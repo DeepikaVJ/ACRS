@@ -10,34 +10,39 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 const core_1 = require("@angular/core");
 const http_1 = require("@angular/http");
-const router_1 = require("@angular/router");
-let CarDetailComponent = class CarDetailComponent {
-    constructor(http, router) {
+let DepartmentComponent = class DepartmentComponent {
+    constructor(http) {
         this.http = http;
-        this.router = router;
-        this.title = "Customer-Car Detail Form";
-        this.vinSearchFieldValue = "";
+        this.title = "Department Detail";
     }
-    showDetails() {
-        console.log("Inside cardetail.component.showDetails()!!!!");
-        var searchURL = "";
-        console.log(this.vinSearchFieldValue);
-        searchURL = "/rest/car/vin/" + this.vinSearchFieldValue;
+    ngOnInit() {
+        console.log("Inside DepartmentComponent.ngOnInit()!!!!");
+        var searchURL = "/rest/departments";
         var requestHeaders = new http_1.Headers({ 'Accept': 'application/json' });
         var options = new http_1.RequestOptions({ headers: requestHeaders });
-        this.http.get(searchURL, options).subscribe(res => this.car = res.json());
-    }
-    routeToMainComponent() {
-        var departmentLink = ['/departments'];
-        this.router.navigate(departmentLink);
+        this.http.get(searchURL, options).subscribe(res => this.departments = res.json());
     }
 };
-CarDetailComponent = __decorate([
+DepartmentComponent = __decorate([
     core_1.Component({
-        selector: 'cardetail',
-        templateUrl: '../partials/cardetail.component.html',
+        selector: 'departments',
+        template: `
+        <table class="departmentList">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let department of departments">
+                <td>{{department.departmentId}}</td>
+                <td>{{department.name}}</td>
+            </tr>
+            </tbody>
+        </table>`
     }), 
-    __metadata('design:paramtypes', [http_1.Http, router_1.Router])
-], CarDetailComponent);
-exports.CarDetailComponent = CarDetailComponent;
-//# sourceMappingURL=cardetail.component.js.map
+    __metadata('design:paramtypes', [http_1.Http])
+], DepartmentComponent);
+exports.DepartmentComponent = DepartmentComponent;
+//# sourceMappingURL=department.component.js.map

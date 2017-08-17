@@ -12,10 +12,11 @@ import java.util.Collection;
 @Repository
 public class ServiceDAO {
 
-@PersistenceContext
+    @PersistenceContext
     EntityManager entityManager;
-@Transactional
+
+    @Transactional
     public Collection<Service> readServices(Integer departmentId) {
-        return (entityManager.createQuery("from Service where departmentId="+"'"+departmentId+"'")).getResultList();
+        return (entityManager.createQuery("from Service where departmentId=" + "'" + departmentId + "'")).getResultList();
     }
 }
