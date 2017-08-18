@@ -7,8 +7,7 @@ import {Customer} from "./customer";
 
 @Component({
     selector: 'cardetail',
-    templateUrl: '../partials/cardetail.component.html',
-    //styleUrls: ['../css/car.component.styles.css'],
+    templateUrl: '../partials/cardetail.component.html'
 })
 export class CarDetailComponent {
 
@@ -36,7 +35,7 @@ export class CarDetailComponent {
         console.log("inside cardetail.routeToMainComponent()");
         console.log(this.car);
         if (this.car) {
-            var departmentLink = ['/departments', this.car.vin];
+            var departmentLink = ['/departments'];
             this.router.navigate(departmentLink);
         }
     }

@@ -31,7 +31,7 @@ let CarDetailComponent = class CarDetailComponent {
         console.log("inside cardetail.routeToMainComponent()");
         console.log(this.car);
         if (this.car) {
-            var departmentLink = ['/departments', this.car.vin];
+            var departmentLink = ['/departments'];
             this.router.navigate(departmentLink);
         }
     }
@@ -39,7 +39,7 @@ let CarDetailComponent = class CarDetailComponent {
 CarDetailComponent = __decorate([
     core_1.Component({
         selector: 'cardetail',
-        templateUrl: '../partials/cardetail.component.html',
+        templateUrl: '../partials/cardetail.component.html'
     }), 
     __metadata('design:paramtypes', [http_1.Http, router_1.Router])
 ], CarDetailComponent);

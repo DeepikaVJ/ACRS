@@ -21,7 +21,7 @@ Dept1DentingpaintingComponent = __decorate([
     core_1.Directive({}),
     core_1.Component({
         selector: 'services-outlet1',
-        template: `<h1>HELLO FROM THE FIRST DEPARTMENT</h1>
+        template: `<h1 style="float: right">HELLO FROM THE FIRST DEPARTMENT</h1>
     `
     }), 
     __metadata('design:paramtypes', [http_1.Http])

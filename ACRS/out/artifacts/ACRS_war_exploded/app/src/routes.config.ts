@@ -4,7 +4,7 @@ import {CarDetailComponent} from "./cardetail.component";
 import {DepartmentComponent} from "./department.component";
 
 let routes:Routes = [
-    {path:'departments/:vin',component:DepartmentComponent},
+    {path:'departments',component:DepartmentComponent},
     {path:'cardetail',component:CarDetailComponent},
     // // {path:'movie/:mid',component:MovieComponent},
       {path:'',redirectTo:'/cardetail',pathMatch:'full'},

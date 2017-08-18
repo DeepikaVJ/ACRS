@@ -10,21 +10,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 const core_1 = require("@angular/core");
 const http_1 = require("@angular/http");
-let Dept1DentingpaintingComponent = class Dept1DentingpaintingComponent {
+let Dept2RepairsAndFixesComponent = class Dept2RepairsAndFixesComponent {
     constructor(http) {
         this.http = http;
     }
     ngOnInit() {
     }
 };
-Dept1DentingpaintingComponent = __decorate([
+Dept2RepairsAndFixesComponent = __decorate([
     core_1.Directive({}),
     core_1.Component({
-        selector: 'services-outlet1',
-        template: `<h1 style="float: right">HELLO FROM THE FIRST DEPARTMENT</h1>
+        selector: 'services-outlet2',
+        template: `<h1>HELLO FROM THE Second DEPARTMENT</h1>
     `
     }), 
     __metadata('design:paramtypes', [http_1.Http])
-], Dept1DentingpaintingComponent);
-exports.Dept1DentingpaintingComponent = Dept1DentingpaintingComponent;
-//# sourceMappingURL=dept1.dentingpainting.component.js.map
+], Dept2RepairsAndFixesComponent);
+exports.Dept2RepairsAndFixesComponent = Dept2RepairsAndFixesComponent;
+//# sourceMappingURL=dept2.repairsAndFixes.component.js.map

@@ -10,8 +10,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 const core_1 = require("@angular/core");
 const http_1 = require("@angular/http");
+const router_1 = require("@angular/router");
 let DepartmentComponent = class DepartmentComponent {
-    constructor(http) {
+    constructor(http, activatedRoute) {
         this.http = http;
         this.title = "Department Detail";
     }
@@ -24,9 +25,11 @@ let DepartmentComponent = class DepartmentComponent {
     }
 };
 DepartmentComponent = __decorate([
+    core_1.Directive({}),
     core_1.Component({
         selector: 'departments',
         template: `
+        <h1 name="customerDetail"></h1>
         <table class="departmentList">
             <thead>
             <tr>
@@ -42,9 +45,12 @@ DepartmentComponent = __decorate([
             </tbody>
         </table>
         <services-outlet1></services-outlet1>
+        <services-outlet2></services-outlet2>
+        <services-outlet3></services-outlet3>
+        <services-outlet4></services-outlet4>
     `
     }), 
-    __metadata('design:paramtypes', [http_1.Http])
+    __metadata('design:paramtypes', [http_1.Http, router_1.ActivatedRoute])
 ], DepartmentComponent);
 exports.DepartmentComponent = DepartmentComponent;
 //# sourceMappingURL=department.component.js.map

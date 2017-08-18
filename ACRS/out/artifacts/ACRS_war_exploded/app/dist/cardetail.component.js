@@ -31,7 +31,7 @@ let CarDetailComponent = class CarDetailComponent {
         console.log("inside cardetail.routeToMainComponent()");
         console.log(this.car);
         if (this.car) {
-            var departmentLink = ['/departments', this.car.vin];
+            var departmentLink = ['/departments'];
             this.router.navigate(departmentLink);
         }
     }
