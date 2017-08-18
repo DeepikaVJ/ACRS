@@ -28,8 +28,12 @@ let CarDetailComponent = class CarDetailComponent {
         this.http.get(searchURL, options).subscribe(res => this.car = res.json());
     }
     routeToMainComponent() {
-        var departmentLink = ['/departments'];
-        this.router.navigate(departmentLink);
+        console.log("inside cardetail.routeToMainComponent()");
+        console.log(this.car);
+        if (this.car) {
+            var departmentLink = ['/departments', this.car.vin];
+            this.router.navigate(departmentLink);
+        }
     }
 };
 CarDetailComponent = __decorate([

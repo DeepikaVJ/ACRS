@@ -15,7 +15,8 @@ AppComponent = __decorate([
     core_1.Component({
         selector: 'acrs-app',
         template: `<div>
-       	<router-outlet></router-outlet>      
+       	<router-outlet></router-outlet>   
+        <!--<services-outlet1><services-outlet1>-->
     </div>`
     }), 
     __metadata('design:paramtypes', [])

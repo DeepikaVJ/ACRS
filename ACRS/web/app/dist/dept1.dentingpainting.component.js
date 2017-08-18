@@ -9,17 +9,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 const core_1 = require("@angular/core");
-let AppComponent = class AppComponent {
+const http_1 = require("@angular/http");
+let Dept1DentingpaintingComponent = class Dept1DentingpaintingComponent {
+    constructor(http) {
+        this.http = http;
+    }
+    ngOnInit() {
+    }
 };
-AppComponent = __decorate([
+Dept1DentingpaintingComponent = __decorate([
+    core_1.Directive({}),
     core_1.Component({
-        selector: 'acrs-app',
-        template: `<div>
-       	<router-outlet></router-outlet>   
-        <!--<services-outlet1><services-outlet1>-->
-    </div>`
+        selector: 'services-outlet1',
+        template: `<h1>HELLO FROM THE FIRST DEPARTMENT</h1>
+    `
     }), 
-    __metadata('design:paramtypes', [])
-], AppComponent);
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+    __metadata('design:paramtypes', [http_1.Http])
+], Dept1DentingpaintingComponent);
+exports.Dept1DentingpaintingComponent = Dept1DentingpaintingComponent;
+//# sourceMappingURL=dept1.dentingpainting.component.js.map

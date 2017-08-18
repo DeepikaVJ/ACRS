@@ -1,6 +1,8 @@
 import {Component, OnInit} from "@angular/core";
 import {Http, Headers, RequestOptions} from "@angular/http";
 import {Department} from "./department";
+import {CarComponent} from "./car.component"
+import {Dept1DentingpaintingComponent} from "./dept1.dentingpainting.component";
 
 @Component({
     selector: 'departments',
@@ -14,11 +16,13 @@ import {Department} from "./department";
             </thead>
             <tbody>
             <tr *ngFor="let department of departments">
-                <td>{{department.departmentId}}</td>
-                <td>{{department.name}}</td>
+                <td>{{department?.departmentId}}</td>
+                <td>{{department?.name}}</td>
             </tr>
             </tbody>
-        </table>`
+        </table>
+        <services-outlet1></services-outlet1>
+    `
 })
 export class DepartmentComponent implements OnInit {
     title: string = "Department Detail";

@@ -33,8 +33,12 @@ export class CarDetailComponent {
     }
 
     routeToMainComponent() {
-        var departmentLink = ['/departments'];
-        this.router.navigate(departmentLink);
+        console.log("inside cardetail.routeToMainComponent()");
+        console.log(this.car);
+        if (this.car) {
+            var departmentLink = ['/departments', this.car.vin];
+            this.router.navigate(departmentLink);
+        }
     }
 }
 

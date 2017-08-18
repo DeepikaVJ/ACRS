@@ -36,11 +36,13 @@ DepartmentComponent = __decorate([
             </thead>
             <tbody>
             <tr *ngFor="let department of departments">
-                <td>{{department.departmentId}}</td>
-                <td>{{department.name}}</td>
+                <td>{{department?.departmentId}}</td>
+                <td>{{department?.name}}</td>
             </tr>
             </tbody>
-        </table>`
+        </table>
+        <services-outlet1></services-outlet1>
+    `
     }), 
     __metadata('design:paramtypes', [http_1.Http])
 ], DepartmentComponent);
