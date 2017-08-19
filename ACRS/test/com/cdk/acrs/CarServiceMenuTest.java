@@ -19,7 +19,7 @@ import java.util.Map;
 //@ContextConfiguration({
 //         "file:web/WEB-INF/dispatcher-servlet.xml"
 //         })
-public class CarServiceTest {
+public class CarServiceMenuTest {
     //    @Autowired
     CarService service =new CarService();
 

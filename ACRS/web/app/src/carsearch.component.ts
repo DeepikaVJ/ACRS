@@ -6,7 +6,6 @@ import {Car} from "./car";
 @Component({
     selector: 'acrs-app',
     templateUrl: '../partials/carsearch.component.html',
-    //styleUrls:['../css/carsearch.component.styles.css'],
 })
 export class CarSearchComponent implements OnInit {
 

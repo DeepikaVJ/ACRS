@@ -7,62 +7,114 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed6af609-69ef-4ac4-9380-8c11d9aedc8c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/cdk/acrs/CarServiceTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/department.component.styles.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/dept1.component.style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/partials/dept1.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/WEB-INF/classes/com/cdk/acrs/service/CarService.class" afterPath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/WEB-INF/classes/com/cdk/acrs/service/CarService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ACRS/com/cdk/acrs/service/CarService.class" afterPath="$PROJECT_DIR$/out/production/ACRS/com/cdk/acrs/service/CarService.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/WEB-INF/classes/com/cdk/acrs/model/Service.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/carForm.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/carForm.component.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/city.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/city.component.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/cricket.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/cricket.component.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/date.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/date.component.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/departmentServices.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/departmentServices.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/hello.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/hello.component.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/main.module.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/main.module.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/person.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/person.component.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/person.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/person.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/persondetail.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/persondetail.component.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/sum.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/sum.component.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ACRS/com/cdk/acrs/model/Service.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/ACRS/com/cdk/acrs/CarServiceTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/Customer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/Customer.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/app.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/app.component.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/app.module.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/app.module.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/car.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/car.component.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/car.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/car.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/carForm.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/carForm.component.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/cardetail.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/cardetail.component.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/carsearch.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/carsearch.component.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/city.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/city.component.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/cricket.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/cricket.component.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/customerdetail.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/customerdetail.component.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/date.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/date.component.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/department.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/department.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/department.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/departmentServices.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/departmentServices.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/dept1.dentingpainting.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/dept1.dentingpainting.component.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/dept2.repairsAndFixes.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/dept2.repairsAndFixes.component.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/dept3.cleaningAndCare.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/dept3.cleaningAndCare.component.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/dept4.periodicServices.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/dept4.periodicServices.component.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/hello.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/hello.component.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/main.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/main.module.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/main.module.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/person.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/person.component.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/person.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/person.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/persondetail.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/persondetail.component.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/routes.config.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/routes.config.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/service.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/service.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/sum.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/sum.component.js.map" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/cdk/acrs/model/Service.java" afterPath="$PROJECT_DIR$/src/com/cdk/acrs/model/ServiceMenu.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/com/cdk/acrs/CarServiceTest.java" afterPath="$PROJECT_DIR$/test/com/cdk/acrs/CarServiceMenuTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/app/dist/department.component.js.map" afterPath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/department.component.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/WEB-INF/classes/com/cdk/acrs/controller/ServiceController.class" afterPath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/WEB-INF/classes/com/cdk/acrs/controller/ServiceController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/WEB-INF/classes/com/cdk/acrs/dao/ServiceDao.class" afterPath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/WEB-INF/classes/com/cdk/acrs/dao/ServiceDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ACRS/com/cdk/acrs/controller/ServiceController.class" afterPath="$PROJECT_DIR$/out/production/ACRS/com/cdk/acrs/controller/ServiceController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ACRS/com/cdk/acrs/dao/ServiceDAO.class" afterPath="$PROJECT_DIR$/out/production/ACRS/com/cdk/acrs/dao/ServiceDAO.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ACRS.iml" afterPath="$PROJECT_DIR$/ACRS.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/cardetail.component.js" afterPath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/cardetail.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/cardetail.component.js.map" afterPath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/cardetail.component.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/carsearch.component.js" afterPath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/carsearch.component.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/carsearch.component.js.map" afterPath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/carsearch.component.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/customerdetail.component.js" afterPath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/customerdetail.component.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/department.component.js" afterPath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/department.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/department.component.js.map" afterPath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/department.component.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/dept1.dentingpainting.component.js" afterPath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/dept1.dentingpainting.component.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/dept1.dentingpainting.component.js.map" afterPath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/dept1.dentingpainting.component.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/dept2.repairsAndFixes.component.js" afterPath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/dept2.repairsAndFixes.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/dept2.repairsAndFixes.component.js.map" afterPath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/dept2.repairsAndFixes.component.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/dept3.cleaningAndCare.component.js" afterPath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/dept3.cleaningAndCare.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/dept3.cleaningAndCare.component.js.map" afterPath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/dept3.cleaningAndCare.component.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/dept4.periodicServices.component.js" afterPath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/dept4.periodicServices.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/dept4.periodicServices.component.js.map" afterPath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/dept4.periodicServices.component.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/routes.config.js" afterPath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/routes.config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/routes.config.js.map" afterPath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/routes.config.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/src/cardetail.component.ts" afterPath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/src/cardetail.component.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/src/carsearch.component.ts" afterPath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/src/carsearch.component.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/src/department.component.ts" afterPath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/src/department.component.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/src/dept1.dentingpainting.component.ts" afterPath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/src/dept1.dentingpainting.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/src/dept2.repairsAndFixes.component.ts" afterPath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/src/dept2.repairsAndFixes.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/src/dept3.cleaningAndCare.component.ts" afterPath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/src/dept3.cleaningAndCare.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/src/dept4.periodicServices.component.ts" afterPath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/src/dept4.periodicServices.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/src/routes.config.ts" afterPath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/src/routes.config.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/cdk/acrs/service/CarService.java" afterPath="$PROJECT_DIR$/src/com/cdk/acrs/service/CarService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/dist/cardetail.component.js" afterPath="$PROJECT_DIR$/web/app/dist/cardetail.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/dist/cardetail.component.js.map" afterPath="$PROJECT_DIR$/web/app/dist/cardetail.component.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/dist/customerdetail.component.js" afterPath="$PROJECT_DIR$/web/app/dist/customerdetail.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/dist/department.component.js" afterPath="$PROJECT_DIR$/web/app/dist/department.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/dist/department.component.js.map" afterPath="$PROJECT_DIR$/web/app/dist/department.component.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/dist/dept1.dentingpainting.component.js" afterPath="$PROJECT_DIR$/web/app/dist/dept1.dentingpainting.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/dist/dept1.dentingpainting.component.js.map" afterPath="$PROJECT_DIR$/web/app/dist/dept1.dentingpainting.component.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/dist/dept2.repairsAndFixes.component.js" afterPath="$PROJECT_DIR$/web/app/dist/dept2.repairsAndFixes.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/dist/dept2.repairsAndFixes.component.js.map" afterPath="$PROJECT_DIR$/web/app/dist/dept2.repairsAndFixes.component.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/dist/dept3.cleaningAndCare.component.js" afterPath="$PROJECT_DIR$/web/app/dist/dept3.cleaningAndCare.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/dist/dept3.cleaningAndCare.component.js.map" afterPath="$PROJECT_DIR$/web/app/dist/dept3.cleaningAndCare.component.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/dist/dept4.periodicServices.component.js" afterPath="$PROJECT_DIR$/web/app/dist/dept4.periodicServices.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/dist/dept4.periodicServices.component.js.map" afterPath="$PROJECT_DIR$/web/app/dist/dept4.periodicServices.component.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/dist/routes.config.js" afterPath="$PROJECT_DIR$/web/app/dist/routes.config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/dist/routes.config.js.map" afterPath="$PROJECT_DIR$/web/app/dist/routes.config.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/partials/dept1.component.html" afterPath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/partials/dept1.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/cdk/acrs/controller/ServiceController.java" afterPath="$PROJECT_DIR$/src/com/cdk/acrs/controller/ServiceController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/cdk/acrs/dao/ServiceDAO.java" afterPath="$PROJECT_DIR$/src/com/cdk/acrs/dao/ServiceDAO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/src/cardetail.component.ts" afterPath="$PROJECT_DIR$/web/app/src/cardetail.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/src/carsearch.component.ts" afterPath="$PROJECT_DIR$/web/app/src/carsearch.component.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/src/department.component.ts" afterPath="$PROJECT_DIR$/web/app/src/department.component.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/src/dept1.dentingpainting.component.ts" afterPath="$PROJECT_DIR$/web/app/src/dept1.dentingpainting.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/src/dept2.repairsAndFixes.component.ts" afterPath="$PROJECT_DIR$/web/app/src/dept2.repairsAndFixes.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/src/dept3.cleaningAndCare.component.ts" afterPath="$PROJECT_DIR$/web/app/src/dept3.cleaningAndCare.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/src/dept4.periodicServices.component.ts" afterPath="$PROJECT_DIR$/web/app/src/dept4.periodicServices.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/src/routes.config.ts" afterPath="$PROJECT_DIR$/web/app/src/routes.config.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/src/service.ts" afterPath="$PROJECT_DIR$/web/app/src/service.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/partials/dept1.component.html" afterPath="$PROJECT_DIR$/web/partials/dept1.component.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -74,23 +126,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/app/src/main.ts">
+      <file leaf-file-name="dept1.dentingpainting.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/app/src/dept1.dentingpainting.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="-145">
+              <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+              <folding>
+                <element signature="e#0#77#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dept1.dentingpainting.component.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/app/src/dept1.dentingpainting.component.ts">
+      <file leaf-file-name="department.component.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/app/src/department.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="43" column="38" lean-forward="false" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
+            <state relative-caret-position="-225">
+              <caret line="46" column="4" lean-forward="false" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
               <folding>
-                <element signature="e#0#48#0" expanded="true" />
+                <element signature="e#0#59#0" expanded="true" />
+                <marker date="1503146407062" expanded="true" signature="531:927" ph="..." />
+                <marker date="1503146407062" expanded="true" signature="657:673" ph="..." />
+                <marker date="1503146407062" expanded="true" signature="675:694" ph="..." />
+                <marker date="1503146407062" expanded="true" signature="872:888" ph="..." />
+                <marker date="1503146407062" expanded="true" signature="890:909" ph="..." />
+                <marker date="1503146407062" expanded="true" signature="911:926" ph="..." />
+                <marker date="1503146407062" expanded="true" signature="911:927" ph="..." />
+                <marker date="1503146407062" expanded="true" signature="958:1337" ph="..." />
+                <marker date="1503146407062" expanded="true" signature="1286:1297" ph="..." />
               </folding>
             </state>
           </provider>
@@ -99,78 +162,8 @@
       <file leaf-file-name="dept1.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/partials/dept1.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
-              <caret line="33" column="83" lean-forward="false" selection-start-line="33" selection-start-column="82" selection-end-line="33" selection-end-column="83" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CarServiceTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com/cdk/acrs/CarServiceTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CarDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/cdk/acrs/dao/CarDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="26" column="15" lean-forward="false" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="service.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/app/src/service.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cardetail.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/partials/cardetail.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="3" column="34" lean-forward="false" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cardetail.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/app/src/cardetail.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="26" column="26" lean-forward="false" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="carsearch.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/partials/carsearch.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="6" column="31" lean-forward="false" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="carsearch.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/app/src/carsearch.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="840">
-              <caret line="45" column="68" lean-forward="false" selection-start-line="45" selection-start-column="64" selection-end-line="45" selection-end-column="68" />
+            <state relative-caret-position="-165">
+              <caret line="33" column="75" lean-forward="false" selection-start-line="33" selection-start-column="75" selection-end-line="33" selection-end-column="91" />
               <folding />
             </state>
           </provider>
@@ -196,6 +189,7 @@
       <find>cons</find>
       <find>CustomerDetailComponent</find>
       <find>any</find>
+      <find>*/</find>
     </findStrings>
     <replaceStrings>
       <replace>button</replace>
@@ -212,9 +206,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/css/car.component.styles.css" />
-        <option value="$PROJECT_DIR$/web/css/common.styles.css" />
-        <option value="$PROJECT_DIR$/web/partials/car.component.html" />
         <option value="$PROJECT_DIR$/src/com/cdk/vimms/controller/CarController.java" />
         <option value="$PROJECT_DIR$/src/com/cdk/vimms/service/CarService.java" />
         <option value="$PROJECT_DIR$/src/com/cdk/vimms/dao/CarDAO.java" />
@@ -238,8 +229,6 @@
         <option value="$PROJECT_DIR$/src/com/cdk/acrs/controller/DepartmentController.java" />
         <option value="$PROJECT_DIR$/src/com/cdk/acrs/service/DepartmentService.java" />
         <option value="$PROJECT_DIR$/src/com/cdk/acrs/dao/ServiceDao.java" />
-        <option value="$PROJECT_DIR$/src/com/cdk/acrs/controller/ServiceController.java" />
-        <option value="$PROJECT_DIR$/src/com/cdk/acrs/dao/ServiceDAO.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" />
         <option value="$PROJECT_DIR$/src/com/cdk/acrs/controller/CustomerController.java" />
         <option value="$PROJECT_DIR$/web/app/src/customerdetail.component.ts" />
@@ -251,18 +240,23 @@
         <option value="$PROJECT_DIR$/web/app/src/dept4.periodicServices.component.ts" />
         <option value="$PROJECT_DIR$/web/app/src/dept3.cleaningAndCare.component.ts" />
         <option value="$PROJECT_DIR$/web/app/src/routes.config.ts" />
-        <option value="$PROJECT_DIR$/web/app/src/carsearch.component.ts" />
         <option value="$PROJECT_DIR$/web/css/department.component.styles.css" />
         <option value="$PROJECT_DIR$/web/app/src/departmentServices.ts" />
-        <option value="$PROJECT_DIR$/src/com/cdk/acrs/service/CarService.java" />
         <option value="$PROJECT_DIR$/test/com/cdk/acrs/CarServiceTest.java" />
-        <option value="$PROJECT_DIR$/web/app/src/department.component.ts" />
         <option value="$PROJECT_DIR$/web/css/dept1.component.style.css" />
         <option value="$PROJECT_DIR$/web/partials/cardetail.component.html" />
+        <option value="$PROJECT_DIR$/src/com/cdk/acrs/service/CarService.java" />
+        <option value="$PROJECT_DIR$/src/com/cdk/acrs/controller/ServiceController.java" />
+        <option value="$PROJECT_DIR$/src/com/cdk/acrs/model/ServiceMenu.java" />
+        <option value="$PROJECT_DIR$/src/com/cdk/acrs/dao/ServiceDAO.java" />
         <option value="$PROJECT_DIR$/web/app/src/cardetail.component.ts" />
+        <option value="$PROJECT_DIR$/web/app/src/servicemenu.ts" />
+        <option value="$PROJECT_DIR$/web/app/dist/routes.config.js" />
         <option value="$PROJECT_DIR$/web/app/src/service.ts" />
+        <option value="$PROJECT_DIR$/web/app/src/carsearch.component.ts" />
         <option value="$PROJECT_DIR$/web/partials/dept1.component.html" />
         <option value="$PROJECT_DIR$/web/app/src/dept1.dentingpainting.component.ts" />
+        <option value="$PROJECT_DIR$/web/app/src/department.component.ts" />
       </list>
     </option>
   </component>
@@ -328,61 +322,6 @@
             <path>
               <item name="ACRS" type="b2602c69:ProjectViewProjectNode" />
               <item name="ACRS" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ACRS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ACRS" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ACRS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ACRS" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="acrs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ACRS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ACRS" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="acrs" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ACRS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ACRS" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="acrs" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ACRS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ACRS" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="acrs" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ACRS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ACRS" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="acrs" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ACRS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ACRS" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ACRS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ACRS" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="acrs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ACRS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ACRS" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -397,12 +336,6 @@
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ACRS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ACRS" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ACRS" type="b2602c69:ProjectViewProjectNode" />
@@ -495,7 +428,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Tomcat Server.acrsServer">
-    <configuration name="CarServiceTest.testService" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CarServiceMenuTest.testService" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.cdk.acrs.*" />
@@ -506,7 +439,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.cdk.acrs" />
-      <option name="MAIN_CLASS_NAME" value="com.cdk.acrs.CarServiceTest" />
+      <option name="MAIN_CLASS_NAME" value="com.cdk.acrs.CarServiceMenuTest" />
       <option name="METHOD_NAME" value="testService" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -687,7 +620,7 @@
       <listeners />
     </configuration>
     <configuration name="acrsServer" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.16" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
+      <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
       <option name="UPDATING_POLICY" value="redeploy-artifacts" />
       <deployment>
         <artifact name="ACRS:war exploded">
@@ -909,12 +842,12 @@
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.vimms" />
       <item index="1" class="java.lang.String" itemvalue="Tomcat Server.ProjectServer" />
       <item index="2" class="java.lang.String" itemvalue="Tomcat Server.acrsServer" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.CarServiceTest.testService" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.CarServiceMenuTest.testService" />
       <item index="4" class="java.lang.String" itemvalue="Tomcat Server.index.html" />
     </list>
     <recent_temporary>
       <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.CarServiceTest.testService" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.CarServiceMenuTest.testService" />
         <item index="1" class="java.lang.String" itemvalue="Tomcat Server.index.html" />
       </list>
     </recent_temporary>
@@ -939,7 +872,7 @@
       <workItem from="1502906017577" duration="1216000" />
       <workItem from="1502924441435" duration="4749000" />
       <workItem from="1502943286251" duration="37443000" />
-      <workItem from="1502991943806" duration="43325000" />
+      <workItem from="1502991943806" duration="63860000" />
     </task>
     <servers />
   </component>
@@ -976,7 +909,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="144886000" />
+    <option name="totallyTimeSpent" value="165421000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1010,11 +943,11 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293011" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2311828" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26612905" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32795697" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23643725" sideWeight="0.5062167" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33933163" sideWeight="0.4937833" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25449872" sideWeight="0.4937833" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23643725" sideWeight="0.5062167" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1050,11 +983,11 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293011" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3293011" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26612905" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32795697" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23643725" sideWeight="0.5062167" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19730078" sideWeight="0.4937833" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25449872" sideWeight="0.4937833" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23643725" sideWeight="0.5062167" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1100,128 +1033,60 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/tsconfig.json">
+    <entry file="file://$PROJECT_DIR$/web/partials/cardetail.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="22" />
+        <state relative-caret-position="60">
+          <caret line="3" column="34" lean-forward="false" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cdk/vimms/model/Inventory.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/cdk/vimms/model/Transaction.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/cdk/vimms/dao/InventoryDAO.java" />
-    <entry file="jar://$PROJECT_DIR$/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar!/javax/persistence/Query.class">
+    <entry file="file://$PROJECT_DIR$/web/app/npm-debug.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="16" column="11" lean-forward="false" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cdk/acrs/service/DepartmentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="18" column="35" lean-forward="false" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#512#513#0" expanded="false" />
-            <element signature="e#565#566#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cdk/acrs/dao/ServiceDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="19" column="50" lean-forward="true" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cdk/acrs/dao/CustomerDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
+        <state relative-caret-position="300">
           <caret line="21" column="15" lean-forward="false" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cdk/acrs/service/CustomerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="28" column="30" lean-forward="false" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#705#706#0" expanded="false" />
-            <element signature="e#754#755#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cdk/acrs/controller/CustomerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="19" column="48" lean-forward="false" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/src/cricket.component.ts" />
-    <entry file="file://$PROJECT_DIR$/src/com/cdk/acrs/dao/DepartmentDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="49" lean-forward="false" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#368#369#0" expanded="false" />
-            <element signature="e#453#454#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/dist/car.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="31" lean-forward="false" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.html">
+    <entry file="file://$PROJECT_DIR$/src/com/cdk/acrs/dao/CarDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="17" column="33" lean-forward="false" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+        <state relative-caret-position="246">
+          <caret line="26" column="15" lean-forward="false" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/src/app.component.ts">
+    <entry file="file://$PROJECT_DIR$/test/com/cdk/acrs/CarServiceMenuTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="39" lean-forward="false" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+        <state relative-caret-position="360">
+          <caret line="36" column="34" lean-forward="true" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cdk/acrs/service/CarService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="30" column="45" lean-forward="false" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
           <folding>
-            <marker date="1503037581951" expanded="true" signature="95:146" ph="..." />
+            <element signature="e#737#738#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/department.component.styles.css">
+    <entry file="jar://$PROJECT_DIR$/lib/mysql-connector-java-5.1.42-bin.jar!/com/mysql/jdbc/AbandonedConnectionCleanupThread.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="23" column="4" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/src/customer.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        <state relative-caret-position="560">
+          <caret line="37" column="33" lean-forward="false" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
           <folding />
         </state>
       </provider>
@@ -1234,18 +1099,133 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cdk/acrs/model/Service.java">
+    <entry file="file://$PROJECT_DIR$/src/com/cdk/acrs/controller/CarController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="31" column="40" lean-forward="false" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cdk/acrs/controller/CustomerController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
-          <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+          <caret line="19" column="48" lean-forward="false" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cdk/acrs/controller/ServiceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="16" column="65" lean-forward="true" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cdk/acrs/dao/DepartmentDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" column="49" lean-forward="false" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
+          <folding>
+            <element signature="e#368#369#0" expanded="false" />
+            <element signature="e#453#454#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cdk/acrs/model/Department.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
+        <state relative-caret-position="60">
           <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cdk/acrs/model/ServiceMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="5" column="26" lean-forward="false" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cdk/acrs/dao/ServiceDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="18" column="58" lean-forward="true" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/dist/cardetail.component.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/dist/carForm.component.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/dist/carsearch.component.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/dist/dept3.cleaningAndCare.component.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/node_modules/@angular/router/src/directives/router_outlet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="94" column="27" lean-forward="false" selection-start-line="94" selection-start-column="27" selection-end-line="94" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/dist/app.component.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" column="20" lean-forward="true" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/dist/dept1.dentingpainting.component.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/src/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="20" column="57" lean-forward="false" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/src/car.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -1254,146 +1234,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
           <caret line="16" column="25" lean-forward="false" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/src/dept2.repairsAndFixes.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-          <folding>
-            <element signature="e#1#60#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cdk/acrs/controller/CarController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="37" column="31" lean-forward="false" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
-          <folding>
-            <element signature="e#1343#1344#0" expanded="false" />
-            <element signature="e#1403#1404#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="26" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cdk/acrs/service/CarService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="31" column="26" lean-forward="true" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
-          <folding>
-            <element signature="e#377#378#0" expanded="true" />
-            <element signature="e#413#414#0" expanded="true" />
-            <element signature="e#603#604#0" expanded="true" />
-            <element signature="e#642#643#0" expanded="true" />
-            <element signature="e#689#690#0" expanded="true" />
-            <element signature="e#737#738#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-all/2.0.2-beta/mockito-all-2.0.2-beta.jar!/org/mockito/Mockito.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="28" column="13" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cdk/acrs/model/Customer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="24" column="11" lean-forward="false" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="32" column="39" lean-forward="false" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cdk/acrs/model/Car.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1154">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/src/department.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-580">
-          <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#59#0" expanded="true" />
-            <marker date="1503055272008" expanded="true" signature="467:863" ph="..." />
-            <marker date="1503055272008" expanded="true" signature="593:609" ph="..." />
-            <marker date="1503055272008" expanded="true" signature="611:630" ph="..." />
-            <marker date="1503055272008" expanded="true" signature="808:824" ph="..." />
-            <marker date="1503055272008" expanded="true" signature="826:845" ph="..." />
-            <marker date="1503055272008" expanded="true" signature="847:862" ph="..." />
-            <marker date="1503055272008" expanded="true" signature="847:863" ph="..." />
-            <marker date="1503055272008" expanded="true" signature="894:1212" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/src/department.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/src/dept4.periodicServices.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="43" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="43" />
-          <folding>
-            <element signature="e#1#60#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/src/dept3.cleaningAndCare.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#2#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/src/routes.config.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="40" lean-forward="false" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#53#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/src/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="20" column="57" lean-forward="false" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
           <folding />
         </state>
       </provider>
@@ -1409,9 +1249,143 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/src/car.component.ts">
+    <entry file="file://$PROJECT_DIR$/web/app/src/dept3.cleaningAndCare.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-40">
+        <state relative-caret-position="158">
+          <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+          <folding>
+            <element signature="e#2#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/src/dept4.periodicServices.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/src/main.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/src/customer.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/dist/servicemenu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/dist/service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/dist/routes.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="10" lean-forward="false" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/dist/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/src/dept2.repairsAndFixes.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="7" column="36" lean-forward="false" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+          <folding>
+            <element signature="e#1#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/dist/dept4.periodicServices.component.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/src/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+          <folding>
+            <marker date="1503037581951" expanded="true" signature="95:146" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/src/cardetail.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/src/routes.config.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es6.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="102" column="4" lean-forward="false" selection-start-line="102" selection-start-column="4" selection-end-line="102" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/src/service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/common.styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/department.component.styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -1425,42 +1399,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/partials/car.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="24" column="33" lean-forward="true" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/css/dept1.component.style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-60">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cdk/acrs/controller/ServiceController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="17" column="29" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/src/main.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/app/src/carsearch.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="45" column="68" lean-forward="false" selection-start-line="45" selection-start-column="64" selection-end-line="45" selection-end-column="68" />
+        <state relative-caret-position="-465">
+          <caret line="7" column="56" lean-forward="false" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
           <folding />
         </state>
       </provider>
@@ -1473,60 +1423,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/src/cardetail.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="26" column="26" lean-forward="false" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/partials/cardetail.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="34" lean-forward="false" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/src/service.ts">
+    <entry file="file://$PROJECT_DIR$/web/app/src/department.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
-          <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cdk/acrs/dao/CarDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="26" column="15" lean-forward="false" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/cdk/acrs/CarServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/partials/dept1.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="33" column="83" lean-forward="false" selection-start-line="33" selection-start-column="82" selection-end-line="33" selection-end-column="83" />
+        <state relative-caret-position="-165">
+          <caret line="33" column="75" lean-forward="false" selection-start-line="33" selection-start-column="75" selection-end-line="33" selection-end-column="91" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/app/src/dept1.dentingpainting.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="43" column="38" lean-forward="false" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
+        <state relative-caret-position="-145">
+          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
           <folding>
-            <element signature="e#0#48#0" expanded="true" />
+            <element signature="e#0#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/src/department.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-225">
+          <caret line="46" column="4" lean-forward="false" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+            <marker date="1503146407062" expanded="true" signature="531:927" ph="..." />
+            <marker date="1503146407062" expanded="true" signature="657:673" ph="..." />
+            <marker date="1503146407062" expanded="true" signature="675:694" ph="..." />
+            <marker date="1503146407062" expanded="true" signature="872:888" ph="..." />
+            <marker date="1503146407062" expanded="true" signature="890:909" ph="..." />
+            <marker date="1503146407062" expanded="true" signature="911:926" ph="..." />
+            <marker date="1503146407062" expanded="true" signature="911:927" ph="..." />
+            <marker date="1503146407062" expanded="true" signature="958:1337" ph="..." />
+            <marker date="1503146407062" expanded="true" signature="1286:1297" ph="..." />
           </folding>
         </state>
       </provider>

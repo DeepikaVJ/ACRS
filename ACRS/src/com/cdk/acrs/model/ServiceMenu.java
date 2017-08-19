@@ -3,9 +3,9 @@ package com.cdk.acrs.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "services")
-public class Service {
-    public Service() {
+@Table(name = "servicemenu")
+public class ServiceMenu {
+    public ServiceMenu() {
     }
 
     @Id
@@ -20,13 +20,13 @@ public class Service {
     @JoinColumn(name = "departmentId")
     Department department;
 
-    public Service(String serviceName, double price, Department department) {
+    public ServiceMenu(String serviceName, double price, Department department) {
         this.serviceName = serviceName;
         this.price = price;
         this.department = department;
     }
 
-    public Service(int serviceId, String serviceName, double price, Department department) {
+    public ServiceMenu(int serviceId, String serviceName, double price, Department department) {
         this.serviceId = serviceId;
         this.serviceName = serviceName;
         this.price = price;

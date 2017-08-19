@@ -16,7 +16,7 @@ let CarDetailComponent = class CarDetailComponent {
         this.http = http;
         this.router = router;
         this.title = "Customer-Car Detail Form";
-        this.vinSearchFieldValue = 3;
+        this.vinSearchFieldValue = 6;
     }
     showDetails() {
         console.log("Inside cardetail.component.showDetails()!!!!");

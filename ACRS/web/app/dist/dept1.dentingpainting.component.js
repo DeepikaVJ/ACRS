@@ -13,30 +13,40 @@ const http_1 = require("@angular/http");
 let Dept1DentingpaintingComponent = class Dept1DentingpaintingComponent {
     constructor(http) {
         this.http = http;
-        this.checked1 = false;
+        //@Input('parentData') incomingData: string;
+        this.outgoingData = new core_1.EventEmitter();
+        this.childSampleData = "Some child Data";
     }
     ngOnInit() {
         console.log("Inside Department1.ngOnInit()!!!!");
-        var searchURL = "/rest/department/1/services";
+        var searchURL = "/rest/department/1/servicemenu";
         var requestHeaders = new http_1.Headers({ 'Accept': 'application/json' });
         var options = new http_1.RequestOptions({ headers: requestHeaders });
         this.http.get(searchURL, options).subscribe(res => this.department1Services = res.json());
     }
-    checkbox(service) {
-        if (service.selected) {
-            console.log("operation succesfull");
-        }
-        else {
-        }
-        console.log(service.serviceName);
-        console.log(service.selected);
-    }
     addToList(e) {
         var jaa = e.target.checked;
-        console.log("jaa: " + jaa + " operation succesfull");
-        console.log("e.target.value : " + e.target.value);
+        console.log("e.target.checked: " + jaa + " operation succesfull");
+        let selectedServiceId = e.target.id;
+        console.log("selectedServiceId: " + selectedServiceId);
+        let selectedServicePrice = e.target.value;
+        console.log("selectedServicePrice : " + selectedServicePrice);
+        /*   let selected
+        ServiceObject = this.department1Services.find(x => x.serviceId === selectedServiceId);
+           let serviceId = selectedServiceObject.serviceId;
+           console.log(serviceId);
+           let serviceName = selectedServiceObject.serviceName;
+           console.log(serviceName);
+           let price = selectedServiceObject.price;
+           console.log(price)
+           */
+        this.outgoingData.emit(e);
     }
 };
+__decorate([
+    core_1.Output('childData'), 
+    __metadata('design:type', Object)
+], Dept1DentingpaintingComponent.prototype, "outgoingData", void 0);
 Dept1DentingpaintingComponent = __decorate([
     core_1.Component({
         selector: 'services-outlet1',

@@ -5,8 +5,10 @@ import {CarComponent} from "./car.component"
 import {Dept1DentingpaintingComponent} from "./dept1.dentingpainting.component";
 import {ActivatedRoute} from "@angular/router";
 import {Car} from "./car";
+import {Service} from "./service";
 
 @Component({
+    selector: 'departments',
     template: `
         <!--<h1 name="customerDetail">Customer Detail</h1>-->
         <!--<table class="departmentList">
@@ -28,20 +30,22 @@ import {Car} from "./car";
             <a name="dept2" (click)="displayDept(2);">Repairs and Fixes</a>
             <a name="dept3" (click)="displayDept(3);">Cleaning and Care</a>
             <a name="dept4" (click)="displayDept(4);">Periodic Services</a>
+            <h1 style="color: aqua">{{selectedService}}</h1>
         </div>
-        
-        <services-outlet1 *ngIf="selectedDept===1"></services-outlet1>
+        <services-outlet1 *ngIf="selectedDept===1" (childData)='populateSelectedServices($event)'></services-outlet1>
         <services-outlet2 *ngIf="selectedDept===2"></services-outlet2>
         <services-outlet3 *ngIf="selectedDept===3"></services-outlet3>
         <services-outlet4 *ngIf="selectedDept===4"></services-outlet4>
-    ` ,
-    selector: 'departments',
-    styleUrls:['../css/department.component.styles.css']
+    `,
+
+    styleUrls: ['../css/department.component.styles.css']
 })
 export class DepartmentComponent implements OnInit {
     title: string = "Department Detail";
     departments: Department[];
     selectedDept: number;
+
+    selectedServices: Service[];
 
 
     constructor(private http: Http, activatedRoute: ActivatedRoute) {
@@ -57,9 +61,16 @@ export class DepartmentComponent implements OnInit {
         this.http.get(searchURL, options).subscribe(res => this.departments = res.json());
     }
 
-
     displayDept(deptNo: number) {
         this.selectedDept = deptNo;
+    }
+
+    populateSelectedServices(serviceData: any) {
+
+        console.log("===========================================================");
+        console.log("data from child: " +serviceData.target.id);
+        console.log("data from child: " +serviceData.target.value);
+        console.log("===========================================================");
     }
 }
 

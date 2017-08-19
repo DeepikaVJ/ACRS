@@ -1,7 +1,7 @@
 package com.cdk.acrs.controller;
 
 import com.cdk.acrs.dao.ServiceDAO;
-import com.cdk.acrs.model.Service;
+import com.cdk.acrs.model.ServiceMenu;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,8 +14,8 @@ public class ServiceController {
     @Autowired
     ServiceDAO serviceDao;
 
-    @RequestMapping(value = "/department/{departmentId}/services", produces = "application/json", method = RequestMethod.GET)
-    public Collection<Service> readAllDepartments(@PathVariable Integer departmentId) {
+    @RequestMapping(value = "/department/{departmentId}/servicemenu", produces = "application/json", method = RequestMethod.GET)
+    public Collection<ServiceMenu> readAllDepartments(@PathVariable Integer departmentId) {
         return serviceDao.readServices(departmentId);
     }
 

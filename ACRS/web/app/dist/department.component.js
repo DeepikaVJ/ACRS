@@ -26,9 +26,16 @@ let DepartmentComponent = class DepartmentComponent {
     displayDept(deptNo) {
         this.selectedDept = deptNo;
     }
+    populateSelectedServices(serviceData) {
+        console.log("===========================================================");
+        console.log("data from child: " + serviceData.target.id);
+        console.log("data from child: " + serviceData.target.value);
+        console.log("===========================================================");
+    }
 };
 DepartmentComponent = __decorate([
     core_1.Component({
+        selector: 'departments',
         template: `
         <!--<h1 name="customerDetail">Customer Detail</h1>-->
         <!--<table class="departmentList">
@@ -50,14 +57,13 @@ DepartmentComponent = __decorate([
             <a name="dept2" (click)="displayDept(2);">Repairs and Fixes</a>
             <a name="dept3" (click)="displayDept(3);">Cleaning and Care</a>
             <a name="dept4" (click)="displayDept(4);">Periodic Services</a>
+            <h1 style="color: aqua">{{selectedService}}</h1>
         </div>
-        
-        <services-outlet1 *ngIf="selectedDept===1"></services-outlet1>
+        <services-outlet1 *ngIf="selectedDept===1" (childData)='populateSelectedServices($event)'></services-outlet1>
         <services-outlet2 *ngIf="selectedDept===2"></services-outlet2>
         <services-outlet3 *ngIf="selectedDept===3"></services-outlet3>
         <services-outlet4 *ngIf="selectedDept===4"></services-outlet4>
     `,
-        selector: 'departments',
         styleUrls: ['../css/department.component.styles.css']
     }), 
     __metadata('design:paramtypes', [http_1.Http, router_1.ActivatedRoute])
