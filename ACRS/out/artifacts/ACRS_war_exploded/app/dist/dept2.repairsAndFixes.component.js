@@ -18,7 +18,6 @@ let Dept2RepairsAndFixesComponent = class Dept2RepairsAndFixesComponent {
     }
 };
 Dept2RepairsAndFixesComponent = __decorate([
-    core_1.Directive({}),
     core_1.Component({
         selector: 'services-outlet2',
         template: `<h1>HELLO FROM THE Second DEPARTMENT</h1>

@@ -18,10 +18,9 @@ let Dept4PeriodicServicesComponent = class Dept4PeriodicServicesComponent {
     }
 };
 Dept4PeriodicServicesComponent = __decorate([
-    core_1.Directive({}),
     core_1.Component({
         selector: 'services-outlet4',
-        template: `<h1 style="float: right">HELLO FROM THE fourth DEPARTMENT</h1>
+        template: `<h1>HELLO FROM THE fourth DEPARTMENT</h1>
     `
     }), 
     __metadata('design:paramtypes', [http_1.Http])

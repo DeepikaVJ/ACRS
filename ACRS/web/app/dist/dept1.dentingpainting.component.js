@@ -13,16 +13,35 @@ const http_1 = require("@angular/http");
 let Dept1DentingpaintingComponent = class Dept1DentingpaintingComponent {
     constructor(http) {
         this.http = http;
+        this.checked1 = false;
     }
     ngOnInit() {
+        console.log("Inside Department1.ngOnInit()!!!!");
+        var searchURL = "/rest/department/1/services";
+        var requestHeaders = new http_1.Headers({ 'Accept': 'application/json' });
+        var options = new http_1.RequestOptions({ headers: requestHeaders });
+        this.http.get(searchURL, options).subscribe(res => this.department1Services = res.json());
+    }
+    checkbox(service) {
+        if (service.selected) {
+            console.log("operation succesfull");
+        }
+        else {
+        }
+        console.log(service.serviceName);
+        console.log(service.selected);
+    }
+    addToList(e) {
+        var jaa = e.target.checked;
+        console.log("jaa: " + jaa + " operation succesfull");
+        console.log("e.target.value : " + e.target.value);
     }
 };
 Dept1DentingpaintingComponent = __decorate([
-    core_1.Directive({}),
     core_1.Component({
         selector: 'services-outlet1',
-        template: `<h1 style="float: right">HELLO FROM THE FIRST DEPARTMENT</h1>
-    `
+        templateUrl: '../partials/dept1.component.html',
+        styleUrls: ['../css/dept1.component.style.css'],
     }), 
     __metadata('design:paramtypes', [http_1.Http])
 ], Dept1DentingpaintingComponent);

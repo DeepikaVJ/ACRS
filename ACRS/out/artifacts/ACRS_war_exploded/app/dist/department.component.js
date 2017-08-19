@@ -23,14 +23,15 @@ let DepartmentComponent = class DepartmentComponent {
         var options = new http_1.RequestOptions({ headers: requestHeaders });
         this.http.get(searchURL, options).subscribe(res => this.departments = res.json());
     }
+    displayDept(deptNo) {
+        this.selectedDept = deptNo;
+    }
 };
 DepartmentComponent = __decorate([
-    core_1.Directive({}),
     core_1.Component({
-        selector: 'departments',
         template: `
-        <h1 name="customerDetail"></h1>
-        <table class="departmentList">
+        <!--<h1 name="customerDetail">Customer Detail</h1>-->
+        <!--<table class="departmentList">
             <thead>
             <tr>
                 <th>ID</th>
@@ -43,12 +44,21 @@ DepartmentComponent = __decorate([
                 <td>{{department?.name}}</td>
             </tr>
             </tbody>
-        </table>
-        <services-outlet1></services-outlet1>
-        <services-outlet2></services-outlet2>
-        <services-outlet3></services-outlet3>
-        <services-outlet4></services-outlet4>
-    `
+        </table>-->
+        <div class="topnav">
+            <a name="dept1" (click)="displayDept(1);">Denting Painting</a>
+            <a name="dept2" (click)="displayDept(2);">Repairs and Fixes</a>
+            <a name="dept3" (click)="displayDept(3);">Cleaning and Care</a>
+            <a name="dept4" (click)="displayDept(4);">Periodic Services</a>
+        </div>
+        
+        <services-outlet1 *ngIf="selectedDept===1"></services-outlet1>
+        <services-outlet2 *ngIf="selectedDept===2"></services-outlet2>
+        <services-outlet3 *ngIf="selectedDept===3"></services-outlet3>
+        <services-outlet4 *ngIf="selectedDept===4"></services-outlet4>
+    `,
+        selector: 'departments',
+        styleUrls: ['../css/department.component.styles.css']
     }), 
     __metadata('design:paramtypes', [http_1.Http, router_1.ActivatedRoute])
 ], DepartmentComponent);

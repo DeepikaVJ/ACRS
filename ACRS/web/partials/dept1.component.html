@@ -1,0 +1,57 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<div class='carForm'>
+    <div class="col-md-6">
+
+        <!-- <div class="funkyradio" *ngFor="let service of department1Services; let i=index">
+             <div class="funkyradio-default">
+                 <input type="checkbox" name="checkboxes" value="{{service.serviceName}}" [id]='i'/>
+                 <label [for]='i'>{{service.serviceName}}</label>
+             </div>
+ -->
+
+       <!-- <form id="myform">
+            <div>
+                <label *ngFor="let service of department1Services">
+                    <input #{{service.serviceId}} type="checkbox" [(ngModel)]="service.selected"
+                           name="{{service.serviceId}}" (change)="checkbox(service)">{{service.serviceName}}
+                </label>
+            </div>
+        </form>-->
+
+
+        <!--
+                <span ng-repeat="let service of department1Services">
+                    <input type="checkbox" id="{{service.serviceId}}" ng-model="selectedServices[service.serviceId]" "/>
+                    <label for="{{service.serviceId}}">{{service.serviceName}}</label>
+                </span>
+                <button ng-click="populateList()">Submit</button>-->
+        <div class="funkyradio">
+            <div class="funkyradio-default">
+                <!--<input type="checkbox" [(ngModel)]="theCheckbox"  data-md-icheck (change)="toggleVisibility($event)"/>-->
+                <input type="checkbox" name="checkbox" [(ngModel)]="checked1" id="1" value="2000" data-md-icheck (change)="addToList($event)"/>
+                <label for="1">Denting</label>
+
+                <h1>Checked: {{checked1}}</h1>
+            </div>
+            <div class="funkyradio-primary">
+                <input type="checkbox" name="checkbox" id="2" value="3000"/>
+                <label for="2">Painting</label>
+            </div>
+            <div class="funkyradio-success">
+                <input type="checkbox" name="checkbox" id="3" value="200"/>
+                <label for="3">Scratch Removal</label>
+            </div>
+            <div class="funkyradio-danger">
+                <input type="checkbox" name="checkbox" id="4" value="5000"/>
+                <label for="4">Part Replacement</label>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+

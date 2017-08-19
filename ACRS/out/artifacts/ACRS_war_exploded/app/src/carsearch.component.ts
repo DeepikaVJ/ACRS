@@ -1,41 +1,42 @@
 import {Component, OnInit} from "@angular/core";
-import {Http,Headers,RequestOptions} from "@angular/http";
+import {Http, Headers, RequestOptions} from "@angular/http";
 
 import {Car} from "./car";
 
 @Component({
-	selector:'acrs-app',
-    templateUrl:'../partials/carsearch.component.html',
+    selector: 'acrs-app',
+    templateUrl: '../partials/carsearch.component.html',
     //styleUrls:['../css/carsearch.component.styles.css'],
 })
-export class CarSearchComponent implements  OnInit{
+export class CarSearchComponent implements OnInit {
 
-	title:string = "Search Your Car";
-	cars:Car[];
-	imageUrl:string ="images/";
-    searchField:string = "";
-    searchFieldValue:string = "";
-
-
-    constructor(private http:Http) {}
+    title: string = "Search Your Car";
+    cars: Car[];
+    imageUrl: string = "images/";
+    searchField: string = "";
+    searchFieldValue: string = "";
 
 
-    ngOnInit(){
+    constructor(private http: Http) {
+    }
+
+
+    ngOnInit() {
 
     }
 
     searchCars() {
         console.log("Inside searchCars()!!!!");
 
-        var  searchURL = "";
+        var searchURL = "";
 
         console.log(this.searchField);
         console.log(this.searchFieldValue);
 
-        if(this.searchField === "" && this.searchFieldValue === "") {
+        if (this.searchField === "" && this.searchFieldValue === "") {
             searchURL = "/rest/cars";
-        }else{
-            searchURL = "/rest/car/"+this.searchField+"/"+this.searchFieldValue;
+        } else {
+            searchURL = "/rest/car/" + this.searchField + "/" + this.searchFieldValue;
         }
 
 

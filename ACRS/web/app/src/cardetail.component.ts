@@ -7,16 +7,18 @@ import {Customer} from "./customer";
 
 @Component({
     selector: 'cardetail',
-    templateUrl: '../partials/cardetail.component.html'
+    templateUrl: '../partials/cardetail.component.html',
+    // styleUrls:['../css/carsearch.component.styles.css'],
 })
-export class CarDetailComponent {
+export class CarDetailComponent{
 
     title: string = "Customer-Car Detail Form";
     car: Car;
     customer: Customer;
-    vinSearchFieldValue: string = "";
+    vinSearchFieldValue: number;
 
     constructor(private http: Http, private router: Router) {
+        this.vinSearchFieldValue=3;
     }
 
     showDetails() {
