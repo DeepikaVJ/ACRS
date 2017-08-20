@@ -10,20 +10,45 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 const core_1 = require("@angular/core");
 const http_1 = require("@angular/http");
+const storage_service_1 = require("./storage.service");
 let Dept3CleaningAndCareComponent = class Dept3CleaningAndCareComponent {
-    constructor(http) {
+    constructor(http, storageService) {
         this.http = http;
+        this.storageService = storageService;
+        this.department3Services = [];
+        //@Input('parentData') incomingData: string;
+        this.outgoingData = new core_1.EventEmitter();
+        this.childSampleData = "Some child Data";
     }
     ngOnInit() {
+        console.log("Inside Department3.ngOnInit()!!!!");
+        var searchURL = "/rest/department/3/servicemenu";
+        var requestHeaders = new http_1.Headers({ 'Accept': 'application/json' });
+        var options = new http_1.RequestOptions({ headers: requestHeaders });
+        this.http.get(searchURL, options).subscribe(res => this.department3Services = res.json());
+    }
+    addToList(e) {
+        //this.storageService.add(e.target.id);
+        var jaa = e.target.checked;
+        console.log("e.target.checked: " + jaa + " operation succesfull");
+        let selectedServiceId = e.target.id;
+        console.log("selectedServiceId: " + selectedServiceId);
+        let selectedServicePrice = e.target.value;
+        console.log("selectedServicePrice : " + selectedServicePrice);
+        this.outgoingData.emit(e);
     }
 };
+__decorate([
+    core_1.Output('childData'), 
+    __metadata('design:type', Object)
+], Dept3CleaningAndCareComponent.prototype, "outgoingData", void 0);
 Dept3CleaningAndCareComponent = __decorate([
     core_1.Component({
         selector: 'services-outlet3',
-        template: `<h1>HELLO FROM THE third DEPARTMENT</h1>
-    `
+        templateUrl: '../partials/dept3.component.html',
+        styleUrls: ['../css/dept1.component.style.css'],
     }), 
-    __metadata('design:paramtypes', [http_1.Http])
+    __metadata('design:paramtypes', [http_1.Http, storage_service_1.StorageService])
 ], Dept3CleaningAndCareComponent);
 exports.Dept3CleaningAndCareComponent = Dept3CleaningAndCareComponent;
 //# sourceMappingURL=dept3.cleaningAndCare.component.js.map

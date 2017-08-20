@@ -9,9 +9,7 @@ export class StorageService {
     constructor() {
         console.log("Inside StorageService.constructor()");
     }
-
-
-    add(serviceId: number) {
+    /*addToServiceList(serviceId: number) {
         let flag: boolean = false;
         console.log("Inside StorageService.add()");
         for (let id of this.selectedServicesArray) {
@@ -24,7 +22,7 @@ export class StorageService {
         }
     }
 
-    get () {
+    getToServiceList () {
         console.log("Inside StorageService.get()");
         console.log("returning array:");
 
@@ -32,7 +30,7 @@ export class StorageService {
             console.log(" " + id)
         }
         return this.selectedServicesArray;
-    }
+    }*/
 
 
     /* addService(selectedServiceObject: Service) {

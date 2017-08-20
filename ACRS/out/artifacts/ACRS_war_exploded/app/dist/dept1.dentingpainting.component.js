@@ -15,6 +15,12 @@ let Dept1DentingpaintingComponent = class Dept1DentingpaintingComponent {
     constructor(http, storageService) {
         this.http = http;
         this.storageService = storageService;
+        this.department1Services = [];
+        // commented when moving from hardcode to dynamic
+        /* checkedStatus1: boolean;
+         checkedStatus2: boolean;
+         checkedStatus3: boolean;
+         checkedStatus4: boolean;*/
         //@Input('parentData') incomingData: string;
         this.outgoingData = new core_1.EventEmitter();
         this.childSampleData = "Some child Data";
@@ -27,7 +33,7 @@ let Dept1DentingpaintingComponent = class Dept1DentingpaintingComponent {
         this.http.get(searchURL, options).subscribe(res => this.department1Services = res.json());
     }
     addToList(e) {
-        this.storageService.add(e.target.id);
+        //this.storageService.add(e.target.id);
         var jaa = e.target.checked;
         console.log("e.target.checked: " + jaa + " operation succesfull");
         let selectedServiceId = e.target.id;
@@ -41,7 +47,6 @@ let Dept1DentingpaintingComponent = class Dept1DentingpaintingComponent {
          console.log(serviceName);
          let price = find.price;
          console.log(price)
- 
          this.storageService.addService(find);
  */
         this.outgoingData.emit(e);

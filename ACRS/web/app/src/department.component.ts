@@ -8,6 +8,7 @@ import {Car} from "./car";
 import {Service} from "./service";
 import {Observable} from "rxjs/Observable";
 import {StorageService} from "./storage.service";
+import {findIndex} from "rxjs/operator/findIndex";
 
 @Component({
     selector: 'departments',
@@ -21,7 +22,7 @@ import {StorageService} from "./storage.service";
             </tr>
             </thead>
             <tbody>
-            <tr *ngFor="let department of departments">
+            <tr *ngFor="let department of departments", let i="index">
                 <td>{{department?.departmentId}}</td>
                 <td>{{department?.name}}</td>
             </tr>
@@ -33,26 +34,27 @@ import {StorageService} from "./storage.service";
             <a name="dept3" (click)="displayDept(3);">Cleaning and Care</a>
             <a name="dept4" (click)="displayDept(4);">Periodic Services</a>
         </div>
-        <h1 style="color: aqua">{{selectedServiceIds}}</h1>
-        <services-outlet1 *ngIf="selectedDept===1" (childData)='populateSelectedServices($event)'></services-outlet1>
-        <services-outlet2 *ngIf="selectedDept===2"></services-outlet2>
-        <services-outlet3 *ngIf="selectedDept===3"></services-outlet3>
-        <services-outlet4 *ngIf="selectedDept===4"></services-outlet4>
 
+        <services-outlet1 *ngIf="selectedDept===1" (childData)='populateSelectedServices($event)'></services-outlet1>
+        <services-outlet2 *ngIf="selectedDept===2" (childData)='populateSelectedServices($event)'></services-outlet2>
+        <services-outlet3 *ngIf="selectedDept===3" (childData)='populateSelectedServices($event)'></services-outlet3>
+        <services-outlet4 *ngIf="selectedDept===4" (childData)='populateSelectedServices($event)'></services-outlet4>
+
+        Selected Services: <h2 style="color: aqua">{{selectedServiceIds}}</h2>
+        Total Price: <h2 style="color: aqua">{{totalPrice}}</h2>
     `,
 
     styleUrls: ['../css/department.component.styles.css']
 })
 export class DepartmentComponent implements OnInit {
     title: string = "Department Detail";
-    departments: Department[];
+    departments: Department[] = [];
     selectedDept: number;
+    private selectedServiceIds: number[] = [];
+    private totalPrice: number = 0;
 
-    private selectedServiceIds:number[];
-    private totalPrice: number;
 
-
-    constructor(private http: Http, activatedRoute: ActivatedRoute,private storageService:StorageService) {
+    constructor(private http: Http, activatedRoute: ActivatedRoute, private storageService: StorageService) {
 
     }
 
@@ -69,20 +71,44 @@ export class DepartmentComponent implements OnInit {
         this.selectedDept = deptNo;
     }
 
+    addToServiceList(serviceId: number, price: any) {
+        let flag: boolean = false;
+        console.log("Inside StorageService.add()");
+        for (let id of this.selectedServiceIds) {
+            if (id === serviceId) {
+                this.selectedServiceIds.splice(this.selectedServiceIds.indexOf(id), 1);
+                this.totalPrice = this.totalPrice - parseInt(price);
+                flag = true;
+            }
+        }
+        if (flag === false) {
+            this.selectedServiceIds.push(serviceId);
+            this.totalPrice = this.totalPrice + parseInt(price);
+            console.log("Total Price: " + this.totalPrice);
+        }
+    }
+
+    getServiceList() {
+        console.log("Inside StorageService.get()");
+        console.log("returning array:");
+
+        for (let id of this.selectedServiceIds) {
+            console.log(" " + id)
+        }
+        //return this.selectedServiceIds;
+    }
+
     populateSelectedServices(serviceData: any) {
+
+        this.addToServiceList(serviceData.target.id, serviceData.target.value);
+        this.getServiceList();
         console.log("===========================================================");
         let id = serviceData.target.id;
         console.log("data from child: " + id);
-        let value = serviceData.target.value;
-        console.log("data from child: " + value);
-        this.totalPrice = this.totalPrice + parseInt(value);
-        console.log("Total Price: " + this.totalPrice);
-
-        this.storageService.get();
-       // let service = this.storageService.getService();
-
+        let pric = serviceData.target.value;
+        console.log("data from child: " + pric);
+        // this.storageService.get();
         //this.selectedServiceIds.push(parseInt(id));
-
         console.log("===========================================================");
     }
 }

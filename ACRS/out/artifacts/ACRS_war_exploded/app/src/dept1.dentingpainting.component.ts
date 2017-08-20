@@ -11,18 +11,18 @@ import {StorageService} from "./storage.service";
     styleUrls: ['../css/dept1.component.style.css'],
 })
 export class Dept1DentingpaintingComponent implements OnInit {
-    department1Services: Service[];
+    department1Services: Service[] = [];
     selectedServices: string[];
-    checkedStatus1: boolean;
-    checkedStatus2: boolean;
-    checkedStatus3: boolean;
-    checkedStatus4: boolean;
+
+    // commented when moving from hardcode to dynamic
+    /* checkedStatus1: boolean;
+     checkedStatus2: boolean;
+     checkedStatus3: boolean;
+     checkedStatus4: boolean;*/
+
     //@Input('parentData') incomingData: string;
     @Output('childData') outgoingData = new EventEmitter<string>();
-
     childSampleData: string = "Some child Data";
-
-
     constructor(private http: Http, private storageService: StorageService) {
 
     }
@@ -37,9 +37,7 @@ export class Dept1DentingpaintingComponent implements OnInit {
     }
 
     addToList(e: any) {
-
-        this.storageService.add(e.target.id);
-
+        //this.storageService.add(e.target.id);
         var jaa = e.target.checked;
         console.log("e.target.checked: " + jaa + " operation succesfull");
         let selectedServiceId = e.target.id;
@@ -47,17 +45,15 @@ export class Dept1DentingpaintingComponent implements OnInit {
         let selectedServicePrice = e.target.value;
         console.log("selectedServicePrice : " + selectedServicePrice);
 
-
-       /* let find:Service = this.department1Services.find(x => x.serviceId === selectedServiceId);
-        let serviceId = find.serviceId;
-        console.log(serviceId);
-        let serviceName = find.serviceName;
-        console.log(serviceName);
-        let price = find.price;
-        console.log(price)
-
-        this.storageService.addService(find);
-*/
+        /* let find:Service = this.department1Services.find(x => x.serviceId === selectedServiceId);
+         let serviceId = find.serviceId;
+         console.log(serviceId);
+         let serviceName = find.serviceName;
+         console.log(serviceName);
+         let price = find.price;
+         console.log(price)
+         this.storageService.addService(find);
+ */
         this.outgoingData.emit(e);
 
     }
