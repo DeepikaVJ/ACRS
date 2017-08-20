@@ -16,7 +16,7 @@ let CarDetailComponent = class CarDetailComponent {
         this.http = http;
         this.router = router;
         this.title = "Customer-Car Detail Form";
-        this.vinSearchFieldValue = 6;
+        this.vinSearchFieldValue = 8;
     }
     showDetails() {
         console.log("Inside cardetail.component.showDetails()!!!!");
@@ -31,7 +31,7 @@ let CarDetailComponent = class CarDetailComponent {
         console.log("inside cardetail.routeToMainComponent()");
         console.log(this.car);
         if (this.car) {
-            var departmentLink = ['/departments'];
+            var departmentLink = ['/departments', this.vinSearchFieldValue];
             this.router.navigate(departmentLink);
         }
     }

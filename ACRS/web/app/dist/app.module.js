@@ -15,7 +15,6 @@ const http_1 = require('@angular/http');
 const routes_config_1 = require("./routes.config");
 const carsearch_component_1 = require('./carsearch.component');
 const cardetail_component_1 = require("./cardetail.component");
-const customerdetail_component_1 = require("./customerdetail.component");
 const department_component_1 = require("./department.component");
 const app_component_1 = require("./app.component");
 const dept1_dentingpainting_component_1 = require("./dept1.dentingpainting.component");
@@ -23,13 +22,14 @@ const dept4_periodicServices_component_1 = require("./dept4.periodicServices.com
 const dept3_cleaningAndCare_component_1 = require("./dept3.cleaningAndCare.component");
 const dept2_repairsAndFixes_component_1 = require("./dept2.repairsAndFixes.component");
 const storage_service_1 = require("./storage.service");
+const appointmentDTO_1 = require("./appointmentDTO");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
     core_1.NgModule({
         imports: [platform_browser_1.BrowserModule, forms_1.FormsModule, http_1.HttpModule, routes_config_1.configuredRoutes],
         providers: [storage_service_1.StorageService],
-        declarations: [carsearch_component_1.CarSearchComponent, cardetail_component_1.CarDetailComponent, customerdetail_component_1.CustomerDetailComponent, department_component_1.DepartmentComponent, app_component_1.AppComponent, dept1_dentingpainting_component_1.Dept1DentingpaintingComponent, dept2_repairsAndFixes_component_1.Dept2RepairsAndFixesComponent, dept3_cleaningAndCare_component_1.Dept3CleaningAndCareComponent, dept4_periodicServices_component_1.Dept4PeriodicServicesComponent],
+        declarations: [carsearch_component_1.CarSearchComponent, cardetail_component_1.CarDetailComponent, department_component_1.DepartmentComponent, app_component_1.AppComponent, dept1_dentingpainting_component_1.Dept1DentingpaintingComponent, dept2_repairsAndFixes_component_1.Dept2RepairsAndFixesComponent, dept3_cleaningAndCare_component_1.Dept3CleaningAndCareComponent, dept4_periodicServices_component_1.Dept4PeriodicServicesComponent, appointmentDTO_1.AppointmentDTO],
         bootstrap: [app_component_1.AppComponent]
     }), 
     __metadata('design:paramtypes', [])

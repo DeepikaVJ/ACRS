@@ -9,6 +9,7 @@ import {Dept1DentingpaintingComponent} from "./dept1.dentingpainting.component";
 
 let routes: Routes = [
     {path: 'departments', component: DepartmentComponent},
+    {path: 'departments/:vin', component: DepartmentComponent},
     {path: 'dept1', component: Dept1DentingpaintingComponent},
     {path: 'dept2', component: Dept2RepairsAndFixesComponent},
     {path: 'dept3', component: Dept3CleaningAndCareComponent},

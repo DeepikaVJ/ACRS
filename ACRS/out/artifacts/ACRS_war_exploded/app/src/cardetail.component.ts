@@ -15,10 +15,11 @@ export class CarDetailComponent{
     title: string = "Customer-Car Detail Form";
     car: Car;
     customer: Customer;
+
     vinSearchFieldValue: number;
 
     constructor(private http: Http, private router: Router) {
-        this.vinSearchFieldValue=6;
+        this.vinSearchFieldValue=8;
     }
 
     showDetails() {
@@ -37,7 +38,7 @@ export class CarDetailComponent{
         console.log("inside cardetail.routeToMainComponent()");
         console.log(this.car);
         if (this.car) {
-            var departmentLink = ['/departments'];
+            var departmentLink = ['/departments',this.vinSearchFieldValue];
             this.router.navigate(departmentLink);
         }
     }
