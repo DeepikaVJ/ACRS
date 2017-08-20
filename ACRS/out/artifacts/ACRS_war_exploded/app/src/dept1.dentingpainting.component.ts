@@ -2,6 +2,7 @@ import {Component, EventEmitter, Input, OnInit, Output} from "@angular/core";
 import {Http, Headers, RequestOptions} from "@angular/http";
 import {Service} from "./service";
 import {forEach} from "@angular/router/src/utils/collection";
+import {StorageService} from "./storage.service";
 
 
 @Component({
@@ -21,7 +22,8 @@ export class Dept1DentingpaintingComponent implements OnInit {
 
     childSampleData: string = "Some child Data";
 
-    constructor(private http: Http) {
+
+    constructor(private http: Http, private storageService: StorageService) {
 
     }
 
@@ -35,21 +37,27 @@ export class Dept1DentingpaintingComponent implements OnInit {
     }
 
     addToList(e: any) {
+
+        this.storageService.add(e.target.id);
+
         var jaa = e.target.checked;
         console.log("e.target.checked: " + jaa + " operation succesfull");
         let selectedServiceId = e.target.id;
         console.log("selectedServiceId: " + selectedServiceId);
         let selectedServicePrice = e.target.value;
         console.log("selectedServicePrice : " + selectedServicePrice);
-        /*   let selected
-        ServiceObject = this.department1Services.find(x => x.serviceId === selectedServiceId);
-           let serviceId = selectedServiceObject.serviceId;
-           console.log(serviceId);
-           let serviceName = selectedServiceObject.serviceName;
-           console.log(serviceName);
-           let price = selectedServiceObject.price;
-           console.log(price)
-           */
+
+
+       /* let find:Service = this.department1Services.find(x => x.serviceId === selectedServiceId);
+        let serviceId = find.serviceId;
+        console.log(serviceId);
+        let serviceName = find.serviceName;
+        console.log(serviceName);
+        let price = find.price;
+        console.log(price)
+
+        this.storageService.addService(find);
+*/
         this.outgoingData.emit(e);
 
     }

@@ -10,4 +10,6 @@ export class Service {
         this.serviceName = serviceName;
         this.price = price;
     }
+
+
 }

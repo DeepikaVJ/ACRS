@@ -7,114 +7,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed6af609-69ef-4ac4-9380-8c11d9aedc8c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/WEB-INF/classes/com/cdk/acrs/model/Service.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/carForm.component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/carForm.component.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/city.component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/city.component.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/cricket.component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/cricket.component.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/date.component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/date.component.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/departmentServices.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/departmentServices.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/hello.component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/hello.component.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/main.module.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/main.module.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/person.component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/person.component.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/person.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/person.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/persondetail.component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/persondetail.component.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/sum.component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/sum.component.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ACRS/com/cdk/acrs/model/Service.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/ACRS/com/cdk/acrs/CarServiceTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/Customer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/Customer.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/app.component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/app.component.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/app.module.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/app.module.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/car.component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/car.component.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/car.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/car.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/carForm.component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/carForm.component.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/cardetail.component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/cardetail.component.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/carsearch.component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/carsearch.component.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/city.component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/city.component.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/cricket.component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/cricket.component.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/customerdetail.component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/customerdetail.component.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/date.component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/date.component.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/department.component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/department.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/department.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/departmentServices.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/departmentServices.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/dept1.dentingpainting.component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/dept1.dentingpainting.component.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/dept2.repairsAndFixes.component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/dept2.repairsAndFixes.component.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/dept3.cleaningAndCare.component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/dept3.cleaningAndCare.component.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/dept4.periodicServices.component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/dept4.periodicServices.component.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/hello.component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/hello.component.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/main.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/main.module.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/main.module.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/person.component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/person.component.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/person.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/person.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/persondetail.component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/persondetail.component.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/routes.config.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/routes.config.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/service.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/service.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/sum.component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/dist/sum.component.js.map" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/cdk/acrs/model/Service.java" afterPath="$PROJECT_DIR$/src/com/cdk/acrs/model/ServiceMenu.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/com/cdk/acrs/CarServiceTest.java" afterPath="$PROJECT_DIR$/test/com/cdk/acrs/CarServiceMenuTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/app/dist/department.component.js.map" afterPath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/department.component.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/WEB-INF/classes/com/cdk/acrs/controller/ServiceController.class" afterPath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/WEB-INF/classes/com/cdk/acrs/controller/ServiceController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/WEB-INF/classes/com/cdk/acrs/dao/ServiceDao.class" afterPath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/WEB-INF/classes/com/cdk/acrs/dao/ServiceDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ACRS/com/cdk/acrs/controller/ServiceController.class" afterPath="$PROJECT_DIR$/out/production/ACRS/com/cdk/acrs/controller/ServiceController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ACRS/com/cdk/acrs/dao/ServiceDAO.class" afterPath="$PROJECT_DIR$/out/production/ACRS/com/cdk/acrs/dao/ServiceDAO.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/departmentServices.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/departmentServices.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/storage.service.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/storage.service.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/src/storage.service.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/dist/departmentServices.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/dist/departmentServices.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/dist/storage.service.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/dist/storage.service.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/src/storage.service.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/WEB-INF/classes/com/cdk/acrs/model/Car.class" afterPath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/WEB-INF/classes/com/cdk/acrs/model/Car.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ACRS/com/cdk/acrs/model/Car.class" afterPath="$PROJECT_DIR$/out/production/ACRS/com/cdk/acrs/model/Car.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/ACRS/com/cdk/acrs/CarServiceMenuTest.class" afterPath="$PROJECT_DIR$/out/test/ACRS/com/cdk/acrs/CarServiceMenuTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/cardetail.component.js" afterPath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/cardetail.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/carsearch.component.js" afterPath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/carsearch.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/carsearch.component.js.map" afterPath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/carsearch.component.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/customerdetail.component.js" afterPath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/customerdetail.component.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/app.module.js" afterPath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/app.module.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/app.module.js.map" afterPath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/app.module.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/department.component.js" afterPath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/department.component.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/department.component.js.map" afterPath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/department.component.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/dept1.dentingpainting.component.js" afterPath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/dept1.dentingpainting.component.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/dept1.dentingpainting.component.js.map" afterPath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/dept1.dentingpainting.component.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/src/cardetail.component.ts" afterPath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/src/cardetail.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/src/carsearch.component.ts" afterPath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/src/carsearch.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/service.js.map" afterPath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/dist/service.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/src/app.module.ts" afterPath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/src/app.module.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/src/department.component.ts" afterPath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/src/department.component.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/src/dept1.dentingpainting.component.ts" afterPath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/src/dept1.dentingpainting.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/partials/dept1.component.html" afterPath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/partials/dept1.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/cdk/acrs/controller/ServiceController.java" afterPath="$PROJECT_DIR$/src/com/cdk/acrs/controller/ServiceController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/cdk/acrs/dao/ServiceDAO.java" afterPath="$PROJECT_DIR$/src/com/cdk/acrs/dao/ServiceDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/src/cardetail.component.ts" afterPath="$PROJECT_DIR$/web/app/src/cardetail.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/src/carsearch.component.ts" afterPath="$PROJECT_DIR$/web/app/src/carsearch.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/src/service.ts" afterPath="$PROJECT_DIR$/out/artifacts/ACRS_war_exploded/app/src/service.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/cdk/acrs/model/Car.java" afterPath="$PROJECT_DIR$/src/com/cdk/acrs/model/Car.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/cdk/acrs/CarServiceMenuTest.java" afterPath="$PROJECT_DIR$/test/com/cdk/acrs/CarServiceMenuTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/dist/app.module.js" afterPath="$PROJECT_DIR$/web/app/dist/app.module.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/dist/app.module.js.map" afterPath="$PROJECT_DIR$/web/app/dist/app.module.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/dist/department.component.js" afterPath="$PROJECT_DIR$/web/app/dist/department.component.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/dist/department.component.js.map" afterPath="$PROJECT_DIR$/web/app/dist/department.component.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/dist/dept1.dentingpainting.component.js" afterPath="$PROJECT_DIR$/web/app/dist/dept1.dentingpainting.component.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/dist/dept1.dentingpainting.component.js.map" afterPath="$PROJECT_DIR$/web/app/dist/dept1.dentingpainting.component.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/dist/service.js.map" afterPath="$PROJECT_DIR$/web/app/dist/service.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/src/app.module.ts" afterPath="$PROJECT_DIR$/web/app/src/app.module.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/src/department.component.ts" afterPath="$PROJECT_DIR$/web/app/src/department.component.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/src/dept1.dentingpainting.component.ts" afterPath="$PROJECT_DIR$/web/app/src/dept1.dentingpainting.component.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/src/service.ts" afterPath="$PROJECT_DIR$/web/app/src/service.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/partials/dept1.component.html" afterPath="$PROJECT_DIR$/web/partials/dept1.component.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -126,11 +56,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="dept1.dentingpainting.component.ts" pinned="false" current-in-tab="false">
+      <file leaf-file-name="dept1.dentingpainting.component.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/app/src/dept1.dentingpainting.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-145">
-              <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+            <state relative-caret-position="340">
+              <caret line="42" column="10" lean-forward="false" selection-start-line="42" selection-start-column="10" selection-end-line="42" selection-end-column="10" />
               <folding>
                 <element signature="e#0#77#0" expanded="true" />
               </folding>
@@ -138,22 +68,42 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="department.component.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="service.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/app/src/service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="storage.service.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/app/src/storage.service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="department.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/app/src/department.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-225">
-              <caret line="46" column="4" lean-forward="false" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
+            <state relative-caret-position="393">
+              <caret line="81" column="9" lean-forward="false" selection-start-line="81" selection-start-column="9" selection-end-line="81" selection-end-column="9" />
               <folding>
                 <element signature="e#0#59#0" expanded="true" />
-                <marker date="1503146407062" expanded="true" signature="531:927" ph="..." />
-                <marker date="1503146407062" expanded="true" signature="657:673" ph="..." />
-                <marker date="1503146407062" expanded="true" signature="675:694" ph="..." />
-                <marker date="1503146407062" expanded="true" signature="872:888" ph="..." />
-                <marker date="1503146407062" expanded="true" signature="890:909" ph="..." />
-                <marker date="1503146407062" expanded="true" signature="911:926" ph="..." />
-                <marker date="1503146407062" expanded="true" signature="911:927" ph="..." />
-                <marker date="1503146407062" expanded="true" signature="958:1337" ph="..." />
-                <marker date="1503146407062" expanded="true" signature="1286:1297" ph="..." />
+                <marker date="1503159007948" expanded="true" signature="625:1021" ph="..." />
+                <marker date="1503159007948" expanded="true" signature="751:767" ph="..." />
+                <marker date="1503159007948" expanded="true" signature="769:788" ph="..." />
+                <marker date="1503159007948" expanded="true" signature="966:982" ph="..." />
+                <marker date="1503159007948" expanded="true" signature="984:1003" ph="..." />
+                <marker date="1503159007948" expanded="true" signature="1005:1020" ph="..." />
+                <marker date="1503159007948" expanded="true" signature="1005:1021" ph="..." />
+                <marker date="1503159007948" expanded="true" signature="1052:1370" ph="..." />
+                <marker date="1503159007948" expanded="true" signature="1391:1402" ph="..." />
               </folding>
             </state>
           </provider>
@@ -162,8 +112,18 @@
       <file leaf-file-name="dept1.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/partials/dept1.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-165">
+            <state relative-caret-position="660">
               <caret line="33" column="75" lean-forward="false" selection-start-line="33" selection-start-column="75" selection-end-line="33" selection-end-column="91" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.module.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/app/src/app.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="21" column="29" lean-forward="false" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -177,8 +137,8 @@
         <option value="spring-beans.schema" />
         <option value="HTML File" />
         <option value="CSS File" />
-        <option value="TypeScript File" />
         <option value="Class" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -190,6 +150,8 @@
       <find>CustomerDetailComponent</find>
       <find>any</find>
       <find>*/</find>
+      <find>this.selectedServicesArray</find>
+      <find>department1Services</find>
     </findStrings>
     <replaceStrings>
       <replace>button</replace>
@@ -206,10 +168,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/cdk/vimms/controller/CarController.java" />
-        <option value="$PROJECT_DIR$/src/com/cdk/vimms/service/CarService.java" />
         <option value="$PROJECT_DIR$/src/com/cdk/vimms/dao/CarDAO.java" />
-        <option value="$PROJECT_DIR$/web/partials/carsearch.component.html" />
         <option value="$PROJECT_DIR$/src/com/cdk/acrs/dao/DeaprtmentDAO.java" />
         <option value="$PROJECT_DIR$/web/app/src/Customer.ts" />
         <option value="$PROJECT_DIR$/web/app/src/car.component.ts" />
@@ -218,7 +177,6 @@
         <option value="$PROJECT_DIR$/src/com/cdk/acrs/model/Customer.java" />
         <option value="$PROJECT_DIR$/web/app/src/customer.ts" />
         <option value="$PROJECT_DIR$/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar!/javax/persistence/Query.class" />
-        <option value="$PROJECT_DIR$/src/com/cdk/acrs/model/Car.java" />
         <option value="$PROJECT_DIR$/src/com/cdk/acrs/controller/CarController.java" />
         <option value="$PROJECT_DIR$/src/com/cdk/acrs/dao/CarDAO.java" />
         <option value="$PROJECT_DIR$/web/app/src/car.ts" />
@@ -234,7 +192,6 @@
         <option value="$PROJECT_DIR$/web/app/src/customerdetail.component.ts" />
         <option value="$PROJECT_DIR$/web/app/src/department.ts" />
         <option value="$PROJECT_DIR$/web/index.html" />
-        <option value="$PROJECT_DIR$/web/app/src/app.module.ts" />
         <option value="$PROJECT_DIR$/web/app/src/app.component.ts" />
         <option value="$PROJECT_DIR$/web/app/src/dept2.repairsAndFixes.component.ts" />
         <option value="$PROJECT_DIR$/web/app/src/dept4.periodicServices.component.ts" />
@@ -252,11 +209,16 @@
         <option value="$PROJECT_DIR$/web/app/src/cardetail.component.ts" />
         <option value="$PROJECT_DIR$/web/app/src/servicemenu.ts" />
         <option value="$PROJECT_DIR$/web/app/dist/routes.config.js" />
-        <option value="$PROJECT_DIR$/web/app/src/service.ts" />
         <option value="$PROJECT_DIR$/web/app/src/carsearch.component.ts" />
         <option value="$PROJECT_DIR$/web/partials/dept1.component.html" />
-        <option value="$PROJECT_DIR$/web/app/src/dept1.dentingpainting.component.ts" />
+        <option value="$PROJECT_DIR$/web/partials/carsearch.component.html" />
+        <option value="$PROJECT_DIR$/test/com/cdk/acrs/CarServiceMenuTest.java" />
+        <option value="$PROJECT_DIR$/src/com/cdk/acrs/model/Car.java" />
+        <option value="$PROJECT_DIR$/web/app/src/app.module.ts" />
+        <option value="$PROJECT_DIR$/web/app/src/service.ts" />
         <option value="$PROJECT_DIR$/web/app/src/department.component.ts" />
+        <option value="$PROJECT_DIR$/web/app/src/storage.service.ts" />
+        <option value="$PROJECT_DIR$/web/app/src/dept1.dentingpainting.component.ts" />
       </list>
     </option>
   </component>
@@ -311,6 +273,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -318,6 +283,35 @@
             <path>
               <item name="ACRS" type="b2602c69:ProjectViewProjectNode" />
               <item name="ACRS" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ACRS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ACRS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ACRS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ACRS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="acrs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ACRS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ACRS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="acrs" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ACRS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ACRS" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ACRS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ACRS" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="acrs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ACRS" type="b2602c69:ProjectViewProjectNode" />
@@ -377,9 +371,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -620,7 +611,7 @@
       <listeners />
     </configuration>
     <configuration name="acrsServer" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.16" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATING_POLICY" value="redeploy-artifacts" />
       <deployment>
         <artifact name="ACRS:war exploded">
@@ -872,13 +863,14 @@
       <workItem from="1502906017577" duration="1216000" />
       <workItem from="1502924441435" duration="4749000" />
       <workItem from="1502943286251" duration="37443000" />
-      <workItem from="1502991943806" duration="63860000" />
+      <workItem from="1502991943806" duration="77020000" />
+      <workItem from="1503209423689" duration="493000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CarServiceTest_testService - 2017.08.18 at 15h 53m 11s.xml">
-      <configuration name="CarServiceTest.testService" configurationId="JUnit" />
+    <history-entry file="CarServiceMenuTest_testService - 2017.08.19 at 18h 48m 48s.xml">
+      <configuration name="CarServiceMenuTest.testService" configurationId="JUnit" />
     </history-entry>
     <history-entry file="CarServiceTest_testService - 2017.08.18 at 15h 53m 44s.xml">
       <configuration name="CarServiceTest.testService" configurationId="JUnit" />
@@ -909,7 +901,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="165421000" />
+    <option name="totallyTimeSpent" value="179074000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -937,17 +929,16 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3285968" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293011" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26612905" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26612905" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32795697" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23643725" sideWeight="0.5062167" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25449872" sideWeight="0.4937833" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2577121" sideWeight="0.4937833" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23643725" sideWeight="0.5062167" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -955,6 +946,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1033,27 +1025,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/partials/cardetail.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="34" lean-forward="false" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/npm-debug.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cdk/acrs/dao/CustomerDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="21" column="15" lean-forward="false" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1061,15 +1036,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="246">
           <caret line="26" column="15" lean-forward="false" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/cdk/acrs/CarServiceMenuTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="36" column="34" lean-forward="true" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1077,9 +1043,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
           <caret line="30" column="45" lean-forward="false" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
-          <folding>
-            <element signature="e#737#738#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1087,7 +1050,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="560">
           <caret line="37" column="33" lean-forward="false" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1095,7 +1057,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="18" column="33" lean-forward="false" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1103,7 +1064,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
           <caret line="31" column="40" lean-forward="false" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1111,7 +1071,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="19" column="48" lean-forward="false" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1119,7 +1078,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="16" column="65" lean-forward="true" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1127,10 +1085,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="14" column="49" lean-forward="false" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
-          <folding>
-            <element signature="e#368#369#0" expanded="false" />
-            <element signature="e#453#454#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1154,7 +1108,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="18" column="58" lean-forward="true" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1162,23 +1115,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/dist/carForm.component.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/dist/carForm.component.js" />
     <entry file="file://$PROJECT_DIR$/web/app/dist/carsearch.component.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1186,7 +1130,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1194,7 +1137,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="172">
           <caret line="94" column="27" lean-forward="false" selection-start-line="94" selection-start-column="27" selection-end-line="94" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1202,7 +1144,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="17" column="20" lean-forward="true" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1214,38 +1155,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/src/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="20" column="57" lean-forward="false" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/src/car.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/src/car.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" column="25" lean-forward="false" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/app/src/customerdetail.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="7" column="19" lean-forward="false" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="19" />
-          <folding>
-            <marker date="1502966849438" expanded="true" signature="217:218" ph="..." />
-            <marker date="1502966849438" expanded="true" signature="217:902" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1254,7 +1167,7 @@
         <state relative-caret-position="158">
           <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
           <folding>
-            <element signature="e#2#61#0" expanded="true" />
+            <element signature="e#2#61#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1271,7 +1184,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1279,7 +1191,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1287,7 +1198,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1295,7 +1205,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1303,7 +1212,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="8" column="10" lean-forward="false" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1311,17 +1219,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/src/dept2.repairsAndFixes.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="7" column="36" lean-forward="false" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
-          <folding>
-            <element signature="e#1#60#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1329,17 +1226,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/src/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-          <folding>
-            <marker date="1503037581951" expanded="true" signature="95:146" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1347,7 +1233,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1355,7 +1240,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1363,15 +1247,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="102" column="4" lean-forward="false" selection-start-line="102" selection-start-column="4" selection-end-line="102" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/src/service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1379,7 +1254,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1387,7 +1261,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1395,7 +1268,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1403,23 +1275,36 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/src/carsearch.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-465">
-          <caret line="7" column="56" lean-forward="false" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/partials/carsearch.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="31" lean-forward="false" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+        <state relative-caret-position="440">
+          <caret line="22" column="12" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="22" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cdk/acrs/model/Car.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="515">
+          <caret line="98" column="4" lean-forward="false" selection-start-line="98" selection-start-column="4" selection-end-line="98" selection-end-column="4" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/cdk/acrs/CarServiceMenuTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="35" column="9" lean-forward="false" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/src/car.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="16" column="25" lean-forward="false" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -1427,43 +1312,97 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/src/dept2.repairsAndFixes.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="36" lean-forward="false" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+          <folding>
+            <element signature="e#1#60#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/src/carsearch.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="7" column="56" lean-forward="false" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/src/car.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="20" column="5" lean-forward="false" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/src/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="26" lean-forward="false" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/src/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="21" column="29" lean-forward="false" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/partials/dept1.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-165">
+        <state relative-caret-position="660">
           <caret line="33" column="75" lean-forward="false" selection-start-line="33" selection-start-column="75" selection-end-line="33" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/src/department.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="81" column="9" lean-forward="false" selection-start-line="81" selection-start-column="9" selection-end-line="81" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+            <marker date="1503159007948" expanded="true" signature="625:1021" ph="..." />
+            <marker date="1503159007948" expanded="true" signature="751:767" ph="..." />
+            <marker date="1503159007948" expanded="true" signature="769:788" ph="..." />
+            <marker date="1503159007948" expanded="true" signature="966:982" ph="..." />
+            <marker date="1503159007948" expanded="true" signature="984:1003" ph="..." />
+            <marker date="1503159007948" expanded="true" signature="1005:1020" ph="..." />
+            <marker date="1503159007948" expanded="true" signature="1005:1021" ph="..." />
+            <marker date="1503159007948" expanded="true" signature="1052:1370" ph="..." />
+            <marker date="1503159007948" expanded="true" signature="1391:1402" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/src/storage.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/src/service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/app/src/dept1.dentingpainting.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-145">
-          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        <state relative-caret-position="340">
+          <caret line="42" column="10" lean-forward="false" selection-start-line="42" selection-start-column="10" selection-end-line="42" selection-end-column="10" />
           <folding>
             <element signature="e#0#77#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/src/department.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-225">
-          <caret line="46" column="4" lean-forward="false" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#59#0" expanded="true" />
-            <marker date="1503146407062" expanded="true" signature="531:927" ph="..." />
-            <marker date="1503146407062" expanded="true" signature="657:673" ph="..." />
-            <marker date="1503146407062" expanded="true" signature="675:694" ph="..." />
-            <marker date="1503146407062" expanded="true" signature="872:888" ph="..." />
-            <marker date="1503146407062" expanded="true" signature="890:909" ph="..." />
-            <marker date="1503146407062" expanded="true" signature="911:926" ph="..." />
-            <marker date="1503146407062" expanded="true" signature="911:927" ph="..." />
-            <marker date="1503146407062" expanded="true" signature="958:1337" ph="..." />
-            <marker date="1503146407062" expanded="true" signature="1286:1297" ph="..." />
           </folding>
         </state>
       </provider>

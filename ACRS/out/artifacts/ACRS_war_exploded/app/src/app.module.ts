@@ -14,10 +14,12 @@ import {Dept1DentingpaintingComponent} from "./dept1.dentingpainting.component";
 import {Dept4PeriodicServicesComponent} from "./dept4.periodicServices.component";
 import {Dept3CleaningAndCareComponent} from "./dept3.cleaningAndCare.component";
 import {Dept2RepairsAndFixesComponent} from "./dept2.repairsAndFixes.component";
+import {StorageService} from "./storage.service";
 
 
 @NgModule({
     imports: [BrowserModule, FormsModule, HttpModule, configuredRoutes],
+    providers:[StorageService],
     declarations: [CarSearchComponent, CarDetailComponent, CustomerDetailComponent, DepartmentComponent, AppComponent, Dept1DentingpaintingComponent,Dept2RepairsAndFixesComponent,Dept3CleaningAndCareComponent,Dept4PeriodicServicesComponent],
     bootstrap: [AppComponent]
 })

@@ -10,9 +10,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 const core_1 = require("@angular/core");
 const http_1 = require("@angular/http");
+const storage_service_1 = require("./storage.service");
 let Dept1DentingpaintingComponent = class Dept1DentingpaintingComponent {
-    constructor(http) {
+    constructor(http, storageService) {
         this.http = http;
+        this.storageService = storageService;
         //@Input('parentData') incomingData: string;
         this.outgoingData = new core_1.EventEmitter();
         this.childSampleData = "Some child Data";
@@ -25,21 +27,23 @@ let Dept1DentingpaintingComponent = class Dept1DentingpaintingComponent {
         this.http.get(searchURL, options).subscribe(res => this.department1Services = res.json());
     }
     addToList(e) {
+        this.storageService.add(e.target.id);
         var jaa = e.target.checked;
         console.log("e.target.checked: " + jaa + " operation succesfull");
         let selectedServiceId = e.target.id;
         console.log("selectedServiceId: " + selectedServiceId);
         let selectedServicePrice = e.target.value;
         console.log("selectedServicePrice : " + selectedServicePrice);
-        /*   let selected
-        ServiceObject = this.department1Services.find(x => x.serviceId === selectedServiceId);
-           let serviceId = selectedServiceObject.serviceId;
-           console.log(serviceId);
-           let serviceName = selectedServiceObject.serviceName;
-           console.log(serviceName);
-           let price = selectedServiceObject.price;
-           console.log(price)
-           */
+        /* let find:Service = this.department1Services.find(x => x.serviceId === selectedServiceId);
+         let serviceId = find.serviceId;
+         console.log(serviceId);
+         let serviceName = find.serviceName;
+         console.log(serviceName);
+         let price = find.price;
+         console.log(price)
+ 
+         this.storageService.addService(find);
+ */
         this.outgoingData.emit(e);
     }
 };
@@ -53,7 +57,7 @@ Dept1DentingpaintingComponent = __decorate([
         templateUrl: '../partials/dept1.component.html',
         styleUrls: ['../css/dept1.component.style.css'],
     }), 
-    __metadata('design:paramtypes', [http_1.Http])
+    __metadata('design:paramtypes', [http_1.Http, storage_service_1.StorageService])
 ], Dept1DentingpaintingComponent);
 exports.Dept1DentingpaintingComponent = Dept1DentingpaintingComponent;
 //# sourceMappingURL=dept1.dentingpainting.component.js.map

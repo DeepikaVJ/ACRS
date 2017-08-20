@@ -97,6 +97,7 @@ public class Car {
         this.trim = trim;
     }
 
+
     @Override
     public String toString() {
         return "Car{" +

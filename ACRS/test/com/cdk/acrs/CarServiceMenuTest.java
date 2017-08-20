@@ -33,7 +33,7 @@ public class CarServiceMenuTest {
         Mockito.when(mock.getCar(Matchers.anyInt())).thenReturn(car1);
         service.setCarDAO(mock);
 
-        Car car = service.readCar(1000);
+        Car car = service.readCar(2000);
         Assert.assertEquals(car, car1);
     }
 
