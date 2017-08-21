@@ -21,7 +21,6 @@ public class CarDAO {
     public int save(Car car) {
         entityManager.persist(car);
         return car.getVin();
-
     }
 
     public Car getCar(Integer fieldValue) {

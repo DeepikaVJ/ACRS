@@ -15,12 +15,13 @@ import {Dept3CleaningAndCareComponent} from "./dept3.cleaningAndCare.component";
 import {Dept2RepairsAndFixesComponent} from "./dept2.repairsAndFixes.component";
 import {StorageService} from "./storage.service";
 import {AppointmentDTO} from "./appointmentDTO";
+import {StatusComponent} from "./status.component";
 
 
 @NgModule({
     imports: [BrowserModule, FormsModule, HttpModule, configuredRoutes],
     providers:[StorageService],
-    declarations: [CarSearchComponent, CarDetailComponent, DepartmentComponent, AppComponent, Dept1DentingpaintingComponent,Dept2RepairsAndFixesComponent,Dept3CleaningAndCareComponent,Dept4PeriodicServicesComponent,AppointmentDTO],
+    declarations: [CarSearchComponent, CarDetailComponent, DepartmentComponent, AppComponent, Dept1DentingpaintingComponent,Dept2RepairsAndFixesComponent,Dept3CleaningAndCareComponent,Dept4PeriodicServicesComponent,StatusComponent],
     bootstrap: [AppComponent]
 })
 export class AppModule {

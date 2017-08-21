@@ -15,8 +15,8 @@ let CarDetailComponent = class CarDetailComponent {
     constructor(http, router) {
         this.http = http;
         this.router = router;
-        this.title = "Customer-Car Detail Form";
-        this.vinSearchFieldValue = 8;
+        this.title = "Ad-Hoc Car Repair Service";
+        this.vinSearchFieldValue = 6;
     }
     showDetails() {
         console.log("Inside cardetail.component.showDetails()!!!!");
@@ -40,6 +40,7 @@ CarDetailComponent = __decorate([
     core_1.Component({
         selector: 'cardetail',
         templateUrl: '../partials/cardetail.component.html',
+        styleUrls: ['../css/cardetail.component.styles.css'],
     }), 
     __metadata('design:paramtypes', [http_1.Http, router_1.Router])
 ], CarDetailComponent);

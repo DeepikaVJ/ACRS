@@ -3,7 +3,7 @@ package com.cdk.acrs.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "servicemenu")
+@Table(name = "serviceMenu")
 public class ServiceMenu {
     public ServiceMenu() {
     }
@@ -11,8 +11,10 @@ public class ServiceMenu {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     int serviceId;
+
     @Column(nullable = false, length = 20)
     String serviceName;
+
     @Column(nullable = false)
     double price;
 

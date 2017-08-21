@@ -11,10 +11,6 @@ import java.util.Collection;
 @Service
 public class CarService {
 
-    public void setCarDAO(CarDAO carDAO) {
-        this.carDAO = carDAO;
-    }
-
     @Autowired
     CarDAO carDAO;
 

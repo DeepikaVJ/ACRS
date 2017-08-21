@@ -1,0 +1,18 @@
+<h1>Service Status</h1>
+<div class="table-responsive">
+    <table class="table-fill">
+        <thead>
+        <tr>
+            <th>Service</th>
+            <th>Status</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let statusRecord of serviceStatus">
+            <td>{{statusRecord.serviceMenu.serviceName}}</td>
+            <td *ngIf="!statusRecord.status">Done</td>
+            <td *ngIf="statusRecord.status">Queued</td>
+        </tr>
+        </tbody>
+    </table>
+</div>

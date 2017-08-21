@@ -1,5 +1,6 @@
 package com.cdk.acrs.controller;
 
+import com.cdk.acrs.dao.DepartmentDAO;
 import com.cdk.acrs.model.Customer;
 import com.cdk.acrs.model.Department;
 import com.cdk.acrs.service.DepartmentService;
@@ -14,11 +15,11 @@ import static org.springframework.http.MediaType.TEXT_PLAIN_VALUE;
 public class DepartmentController {
 
     @Autowired
-    DepartmentService departmentService;
+    DepartmentDAO departmentDAO;
 
     @RequestMapping(value = "/departments", produces = "application/json", method = RequestMethod.GET)
     public Collection<Department> readAllDepartments() {
-        return departmentService.readDepartments();
+        return departmentDAO.getDepartments();
     }
 
 

@@ -12,22 +12,23 @@ const core_1 = require("@angular/core");
 const http_1 = require("@angular/http");
 const router_1 = require("@angular/router");
 const storage_service_1 = require("./storage.service");
+const appointmentDTO_1 = require("./appointmentDTO");
 let DepartmentComponent = class DepartmentComponent {
-    constructor(http, activatedRoute, storageService) {
+    constructor(http, activatedRoute, storageService, router) {
         this.http = http;
         this.activatedRoute = activatedRoute;
         this.storageService = storageService;
+        this.router = router;
         this.title = "Department Detail";
         this.departments = [];
-        /*private selectedServiceIds: number[] = [];
-        private selectedServiceNames: string[] = [];
-        private totalPrice: number = 0;*/
-        this.appointmentDTO = null;
-        this.successMessage = "";
-        this.errorMessage = "";
-        this.activatedRoute.params.subscribe((prms) => {
-            var receivedVin = parseInt(prms['vin']);
-            this.appointmentDTO.vin = receivedVin;
+        this.selectedServiceIds = [];
+        this.selectedServiceNames = [];
+        this.totalPrice = 0;
+        this.successMessage = '';
+        this.errorMessage = '';
+        this.activatedRoute.params.subscribe((receivedData) => {
+            var receivedVin = parseInt(receivedData['vrn']);
+            console.log("receivedVin: " + receivedVin);
         });
     }
     ngOnInit() {
@@ -42,57 +43,61 @@ let DepartmentComponent = class DepartmentComponent {
     }
     addToServiceList(serviceId, name, price) {
         let flag = false;
-        console.log("Inside StorageService.add()");
-        for (let id of this.appointmentDTO.selectedServiceIds) {
+        console.log("Inside addToServiceList");
+        for (let id of this.selectedServiceIds) {
             if (id === serviceId) {
-                this.appointmentDTO.selectedServiceIds.splice(this.appointmentDTO.selectedServiceIds.indexOf(id), 1);
-                this.appointmentDTO.totalPrice = this.appointmentDTO.totalPrice - parseInt(price);
+                this.selectedServiceIds.splice(this.selectedServiceIds.indexOf(id), 1);
+                this.totalPrice = this.totalPrice - parseInt(price);
                 flag = true;
             }
         }
-        for (let name1 of this.appointmentDTO.selectedServiceNames) {
+        for (let name1 of this.selectedServiceNames) {
             if (name1 === name) {
-                this.appointmentDTO.selectedServiceNames.splice(this.appointmentDTO.selectedServiceNames.indexOf(name1), 1);
+                this.selectedServiceNames.splice(this.selectedServiceNames.indexOf(name1), 1);
                 flag = true;
             }
         }
         if (flag === false) {
-            this.appointmentDTO.selectedServiceIds.push(serviceId);
-            this.appointmentDTO.selectedServiceNames.push(name);
-            this.appointmentDTO.totalPrice = this.appointmentDTO.totalPrice + parseInt(price);
-            console.log("Total Price: " + this.appointmentDTO.totalPrice);
+            this.selectedServiceIds.push(serviceId);
+            this.selectedServiceNames.push(name);
+            this.totalPrice = this.totalPrice + parseInt(price);
+            console.log("Total Price: " + this.totalPrice);
         }
     }
     getServiceList() {
-        console.log("Inside StorageService.get()");
-        console.log("returning array:");
-        for (let id of this.appointmentDTO.selectedServiceIds) {
+        for (let id of this.selectedServiceIds) {
             console.log(" " + id);
+        }
+        for (let name of this.selectedServiceNames) {
+            console.log(" " + name);
         }
         //return this.selectedServiceIds;
     }
     populateSelectedServices(serviceData) {
         this.addToServiceList(serviceData.target.id, serviceData.target.name, serviceData.target.value);
         this.getServiceList();
-        console.log("===========================================================");
-        let id = serviceData.target.id;
-        console.log("data from child: " + id);
-        let pric = serviceData.target.value;
-        console.log("data from child: " + pric);
-        // this.storageService.get();
-        //this.selectedServiceIds.push(parseInt(id));
-        console.log("===========================================================");
+        /* console.log("===========================================================");
+         let id = serviceData.target.id;
+         console.log("data from child: " + id);
+         let pric = serviceData.target.value;
+         console.log("data from child: " + pric);
+         // this.storageService.get();
+         //this.selectedServiceIds.push(parseInt(id));
+         console.log("===========================================================");*/
     }
     postAppointmentRecordToDB() {
         console.log("Inside postAppointmentRecordToDB()!!!!");
         let addUrl = "/rest/appointment/add";
         var requestHeaders = new http_1.Headers({ 'Content-Type': 'application/json' });
         var options = new http_1.RequestOptions({ headers: requestHeaders });
+        this.appointmentDTO = new appointmentDTO_1.AppointmentDTO(2, this.totalPrice, this.selectedServiceIds, this.selectedServiceNames);
         //this.http.post(addUrl,this.car,options).subscribe(res => this.successMessage = res.toString());
-        this.http.post(addUrl, this.appointmentDTO, options).subscribe(result => {
-            this.successMessage = result.toString();
-            console.log(result.text());
+        this.http.post(addUrl, this.appointmentDTO, options).subscribe(res => {
+            this.successMessage = res.toString();
+            console.log(res.text());
             this.errorMessage = "";
+            var statusLink = ['/status'];
+            this.router.navigate(statusLink);
         }, error => {
             this.errorMessage = error;
             this.successMessage = "";
@@ -104,7 +109,20 @@ DepartmentComponent = __decorate([
         selector: 'departments',
         template: `
         <!--<h1 name="customerDetail">Customer Detail</h1>-->
-        
+        <!--<table class="departmentList">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let department of departments", let i="index">
+                <td>{{department?.departmentId}}</td>
+                <td>{{department?.name}}</td>
+            </tr>
+            </tbody>
+        </table>-->
         <div class="topnav">
             <a name="dept1" (click)="displayDept(1);">Denting Painting</a>
             <a name="dept2" (click)="displayDept(2);">Repairs and Fixes</a>
@@ -117,34 +135,23 @@ DepartmentComponent = __decorate([
         <services-outlet3 *ngIf="selectedDept===3" (childData)='populateSelectedServices($event)'></services-outlet3>
         <services-outlet4 *ngIf="selectedDept===4" (childData)='populateSelectedServices($event)'></services-outlet4>
 
-        Selected ServiceIds: <h2 style="color: aqua">{{selectedServiceIds}}</h2>
-        Selected ServiceNames : <h2 style="color: aqua">{{selectedServiceNames}}</h2>
-        Total Price: <h2 style="color: aqua">{{totalPrice}}</h2>
-       
-        <button name="confirm" value="Confirm" (click)="postAppointmentRecordToDB();">Confirm</button>
-        <div *ngIf="successMessage" [ngClass] = "'success'"> {{successMessage}} </div>
-        <div *ngIf="errorMessage" [ngClass] = "'error'"> {{errorMessage}} </div>
-       <!-- <table class="serviceList">
-            <thead>
-            <tr>
-                <th>ID</th>
-                <th>NAME</th>
-                <th>PRICE</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr *ngFor="let department of departments let i=index">
-                <td>{{department?.departmentId}}</td>
-                <td>{{department?.name}}</td>
-                <td>{{department?.name}}</td>
-            </tr>
-            </tbody>
-        </table>-->
-        
+        <!--Selected ServiceIds: <h2 style="color: aqua">{{selectedServiceIds}}</h2>-->
+        <br/>
+        <div class="summary">
+            <h4> Selected Services :</h4>
+            <h2 style="color: aquamarine">{{selectedServiceNames}}</h2>
+            <h4> Total Price:</h4>
+            <h2 style="color: aquamarine">{{totalPrice}}</h2>
+        </div>
+        <!--<h2>{{successMessage}}</h2>-->
+        <!--<h2>{{errorMessage}}</h2>-->
+         
+        <input type="button" class="w3-button w3-black" name="confirm" value="Confirm"
+               (click)="postAppointmentRecordToDB();">
     `,
         styleUrls: ['../css/department.component.styles.css']
     }), 
-    __metadata('design:paramtypes', [http_1.Http, router_1.ActivatedRoute, storage_service_1.StorageService])
+    __metadata('design:paramtypes', [http_1.Http, router_1.ActivatedRoute, storage_service_1.StorageService, router_1.Router])
 ], DepartmentComponent);
 exports.DepartmentComponent = DepartmentComponent;
 //# sourceMappingURL=department.component.js.map

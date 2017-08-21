@@ -1,20 +1,90 @@
 <html>
-  <head>
+<head>
     <title>Angular App</title>
     <meta charset="UTF-8">
-	<base href="/" >
+    <base href="/">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="node_modules/core-js/client/shim.min.js"></script>
-	  <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
     <script src="node_modules/reflect-metadata/Reflect.js"></script>
     <script src="node_modules/systemjs/dist/system.src.js"></script>
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
     <script src="systemjs.config.js"></script>
     <script>
-      System.import('app');
+        System.import('app');
     </script>
-  </head>
-  <body>
-	   <acrs-app style="float: left">Loading........</acrs-app>
-  </body>
+    <style type="text/css">
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            font-size: 1.4rem;
+        }
+
+        /* =14px */
+        h1 {
+            font-size: 2.4rem;
+        }
+
+        /*.bg {
+            !* The image used *!
+            background-image: url("./images/muscleCar.jpg");
+
+            !* Full height *!
+            height: 100%;
+
+            !* Center and scale the image nicely *!
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            font-family: "Roboto", helvetica, arial, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            text-rendering: optimizeLegibility;
+        }*/
+        .bg {
+            /*background-position: center;
+            background-repeat: no-repeat;
+           */
+           position: fixed;
+            left: 0;
+            right: 0;
+            z-index: -1;
+
+            display: block;
+            background-image: url('./images/back.jpg');
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+
+            -webkit-filter: blur(5px);
+            -moz-filter: blur(5px);
+            -o-filter: blur(5px);
+            -ms-filter: blur(5px);
+            filter: blur(5px);
+        }
+
+        .content {
+            position: fixed;
+            left: 0;
+            right: 0;
+            z-index: 9999;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="bg"></div>
+<acrs-app >Loading........</acrs-app>
+</body>
 </html>

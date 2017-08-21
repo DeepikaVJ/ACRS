@@ -2,67 +2,62 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<div class='carForm'>
+
+<div class="funkyradio" *ngFor="let service of department1Services; let i=index">
     <div class="col-md-6">
-
-        <div class="funkyradio" *ngFor="let service of department1Services; let i=index">
-            <div class="funkyradio-default">
-                <h2>serviceId: {{service.serviceId}}</h2>
-                <input type="checkbox" name="{{service.serviceName}}" value="{{service.price}}" id="{{service.serviceId}}" data-md-icheck
-                       (change)="addToList($event)"/>
-                <label attr.for={{service.serviceId}}>{{service.serviceName}}</label>
-            </div>
-
-            <!-- <form id="myform">
-                 <div>
-                     <label *ngFor="let service of department1Services">
-                         <input #{{service.serviceId}} type="checkbox" [(ngModel)]="service.selected"
-                                name="{{service.serviceId}}" (change)="checkbox(service)">{{service.serviceName}}
-                     </label>
-                 </div>
-             </form>-->
-
-
-            <!--
-                    <span ng-repeat="let service of department1Services">
-                        <input type="checkbox" id="{{service.serviceId}}" ng-model="selectedServices[service.serviceId]" "/>
-                        <label for="{{service.serviceId}}">{{service.serviceName}}</label>
-                    </span>
-                    <button ng-click="populateList()">Submit</button>-->
-
-
-            <!--working hard coded code-->
-            <!--<div class="funkyradio">
-                <div class="funkyradio-default">
-                    &lt;!&ndash;<input type="checkbox" [(ngModel)]="theCheckbox"  data-md-icheck (change)="toggleVisibility($event)"/>&ndash;&gt;
-                    <input type="checkbox" name="checkbox" id="1" value="2000" data-serviceName="Denting"
-                           [(ngModel)]="checkedStatus1" data-md-icheck (change)="addToList($event)"/>
-                    <label for="1">Denting</label>
-
-                    <h1>Checked: {{checkedStatus1}}</h1>
-                </div>
-                <div class="funkyradio-primary">
-                    <input type="checkbox" name="checkbox" id="2" value="3000" data-serviceName="Painting"
-                           [(ngModel)]="checkedStatus2" data-md-icheck (change)="addToList($event)"/>
-                    <label for="2">Painting</label>
-                    <h1>Checked: {{checkedStatus2}}</h1>
-                </div>
-                <div class="funkyradio-success">
-                    <input type="checkbox" name="checkbox" id="3" value="200" data-serviceName="Scratch Removal"
-                           [(ngModel)]="checkedStatus3" data-md-icheck (change)="addToList($event)"/>
-                    <label for="3">Scratch Removal</label>
-                    <h1>Checked: {{checkedStatus3}}</h1>
-                </div>
-                <div class="funkyradio-danger">
-                    <input type="checkbox" name="checkbox" id="4" value="5000" data-serviceName="Part Replacement"
-                           [(ngModel)]="checkedStatus4" data-md-icheck (change)="addToList($event)"/>
-                    <label for="4">Part Replacement</label>
-                    <h1>Checked: {{checkedStatus4}}</h1>
-                </div>
-            </div>-->
+        <div class="funkyradio-success">
+            <!--<h2>serviceId: {{service.serviceId}}</h2>-->
+            <input type="checkbox" name="{{service.serviceName}}" value="{{service.price}}" id="{{service.serviceId}}"
+                   data-md-icheck
+                   (change)="addToList($event)"/>
+            <label attr.for={{service.serviceId}}>{{service.serviceName}}</label>
         </div>
-
-
     </div>
-
 </div>
+<!-- <form id="myform">
+     <div>
+         <label *ngFor="let service of department1Services">
+             <input #{{service.serviceId}} type="checkbox" [(ngModel)]="service.selected"
+                    name="{{service.serviceId}}" (change)="checkbox(service)">{{service.serviceName}}
+         </label>
+     </div>
+ </form>-->
+
+
+<!--
+        <span ng-repeat="let service of department1Services">
+            <input type="checkbox" id="{{service.serviceId}}" ng-model="selectedServices[service.serviceId]" "/>
+            <label for="{{service.serviceId}}">{{service.serviceName}}</label>
+        </span>
+        <button ng-click="populateList()">Submit</button>-->
+
+
+<!--working hard coded code-->
+<!--<div class="funkyradio">
+    <div class="funkyradio-default">
+        &lt;!&ndash;<input type="checkbox" [(ngModel)]="theCheckbox"  data-md-icheck (change)="toggleVisibility($event)"/>&ndash;&gt;
+        <input type="checkbox" name="checkbox" id="1" value="2000" data-serviceName="Denting"
+               [(ngModel)]="checkedStatus1" data-md-icheck (change)="addToList($event)"/>
+        <label for="1">Denting</label>
+
+        <h1>Checked: {{checkedStatus1}}</h1>
+    </div>
+    <div class="funkyradio-primary">
+        <input type="checkbox" name="checkbox" id="2" value="3000" data-serviceName="Painting"
+               [(ngModel)]="checkedStatus2" data-md-icheck (change)="addToList($event)"/>
+        <label for="2">Painting</label>
+        <h1>Checked: {{checkedStatus2}}</h1>
+    </div>
+    <div class="funkyradio-success">
+        <input type="checkbox" name="checkbox" id="3" value="200" data-serviceName="Scratch Removal"
+               [(ngModel)]="checkedStatus3" data-md-icheck (change)="addToList($event)"/>
+        <label for="3">Scratch Removal</label>
+        <h1>Checked: {{checkedStatus3}}</h1>
+    </div>
+    <div class="funkyradio-danger">
+        <input type="checkbox" name="checkbox" id="4" value="5000" data-serviceName="Part Replacement"
+               [(ngModel)]="checkedStatus4" data-md-icheck (change)="addToList($event)"/>
+        <label for="4">Part Replacement</label>
+        <h1>Checked: {{checkedStatus4}}</h1>
+    </div>
+</div>-->

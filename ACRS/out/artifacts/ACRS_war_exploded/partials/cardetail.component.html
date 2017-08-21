@@ -1,27 +1,102 @@
-<div class='carForm'>
-    <h1>{{title}}</h1>
+<div>
+    <div class="title">
+        {{title}}
+    </div>
+    <div class="table-title">
+   <h3> Enter VIN: <input type="number" id="vin" required [(ngModel)]="vinSearchFieldValue" name="vin"></h3>
 
-    Enter VIN: <input type="number" id="vin" required [(ngModel)]="vinSearchFieldValue" name="vin">
-
-    <input type='button' value='ShowDetails' (click)='showDetails();'/>
+    </div>
+    <input type='button' class="w3-button w3-black" value='ShowDetails' (click)='showDetails();'/>
     <br/>
-    <h1> Car Details: </h1>
+    <div class="table-title">
+        <h3> Car Details: </h3>
+    </div>
+    <!--
+   //converted into a responsive table
     Make: <h2>{{car?.make}} </h2>
     Model: <h2> {{car?.model}}</h2>
     Trim: <h2>{{car?.trim}} </h2>
-    Year <h2>{{car?.year}} </h2>
+    Year <h2>{{car?.year}} </h2>-->
     <!--CustomerId <h2>{{car?.customer.customerId}}</h2>-->
 
+    <div class="table-responsive">
+        <table class="table-fill">
+            <thead>
+            <tr>
+                <th> Make</th>
+                <th> Model</th>
+                <th>Trim</th>
+                <th>Year</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>{{car?.make}}</td>
+                <td>{{car?.model}}</td>
+                <td>{{car?.trim}}</td>
+                <td>{{car?.year}}</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
 
-    <h1>Customer Details</h1>
+
+    <!-- <div class="table-title">
+         <h3>Car Details:</h3>
+     </div>
+     <table class="table-fill">
+         <thead>
+         <tr>
+             <th class="text-left"> Make</th>
+             <th class="text-left"> Model</th>
+             <th class="text-left">Trim</th>
+             <th class="text-left">Year</th>
+         </tr>
+         </thead>
+         <tbody>
+         <tr>
+             <td class="text-left">{{car?.make}}</td>
+             <td class="text-left">{{car?.model}}</td>
+             <td class="text-left">{{car?.trim}}</td>
+             <td class="text-left">{{car?.year}}</td>
+         </tr>
+         </tbody>
+     </table>-->
+
+
+    <div class="table-title">
+        <h3>Customer Details</h3>
+    </div>
+    <!--
+    //converted into a responsive table
     CustomerID<h2>{{car?.customer?.customerId}} </h2>
     Name<h2> {{car?.customer?.name}}</h2>
     Address<h2>{{car?.customer?.address}} </h2>
-    Contact <h2>{{car?.customer?.contact}} </h2>
+    Contact <h2>{{car?.customer?.contact}} </h2>-->
 
-    <input type="button" value="Select Required Services" (click)="routeToMainComponent();"/>
-
-
+    <div class="table-responsive">
+        <table class="table-fill">
+            <thead>
+            <tr>
+                <th>CustomerID</th>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Contact</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>{{car?.customer?.customerId}}</td>
+                <td> {{car?.customer?.name}}</td>
+                <td>{{car?.customer?.address}}</td>
+                <td>{{car?.customer?.contact}}</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
+<br/>
+<input type="button" class="w3-button w3-black" value="Select Required Services" (click)="routeToMainComponent();"/>
+
 
 

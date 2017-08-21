@@ -1,6 +1,4 @@
 export class AppointmentDTO {
-
-
     vin: number=0;
     totalPrice: number = 0;
     selectedServiceIds: number[] = [];

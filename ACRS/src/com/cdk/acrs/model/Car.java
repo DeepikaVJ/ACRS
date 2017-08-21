@@ -24,7 +24,7 @@ public class Car {
     @Column(length = 20, nullable = true)
     private String trim;
 
-    @OneToOne(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    @OneToOne(cascade = CascadeType.MERGE,fetch = FetchType.EAGER)
     @JoinColumn(name = "customerId")
     private Customer customer;
 
@@ -96,7 +96,6 @@ public class Car {
     public void setTrim(String trim) {
         this.trim = trim;
     }
-
 
     @Override
     public String toString() {

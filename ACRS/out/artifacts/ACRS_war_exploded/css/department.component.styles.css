@@ -1,3 +1,4 @@
+
 .topnav {
     overflow: hidden;
     background-color: #333;
@@ -10,8 +11,9 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 24px;
 }
+
 
 .topnav a:hover {
     background-color: #ddd;
@@ -21,4 +23,30 @@
 .topnav a.active {
     background-color: #4CAF50;
     color: white;
+}
+
+
+.label {
+    margin:auto;
+    font-weight: 400;
+    font-size: 20px;
+    font-style:normal;
+    color: #1b1e24;
+    font-family: "Roboto", helvetica, arial, sans-serif;
+    text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+    text-transform:uppercase;
+    display: block;
+    max-width: 600px;
+    padding:5px;
+}
+
+
+
+input[type=button] {
+    font-size: large;
+    color: black;
+    max-width: 600px;
+    padding:5px;
+    width: 30%;
+    margin: auto;
 }

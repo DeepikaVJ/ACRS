@@ -8,18 +8,17 @@ import {Customer} from "./customer";
 @Component({
     selector: 'cardetail',
     templateUrl: '../partials/cardetail.component.html',
-    // styleUrls:['../css/carsearch.component.styles.css'],
+    styleUrls:['../css/cardetail.component.styles.css'],
 })
 export class CarDetailComponent{
 
-    title: string = "Customer-Car Detail Form";
+    title: string = "Ad-Hoc Car Repair Service";
     car: Car;
     customer: Customer;
-
     vinSearchFieldValue: number;
 
     constructor(private http: Http, private router: Router) {
-        this.vinSearchFieldValue=8;
+        this.vinSearchFieldValue=6;
     }
 
     showDetails() {
@@ -38,6 +37,7 @@ export class CarDetailComponent{
         console.log("inside cardetail.routeToMainComponent()");
         console.log(this.car);
         if (this.car) {
+
             var departmentLink = ['/departments',this.vinSearchFieldValue];
             this.router.navigate(departmentLink);
         }
