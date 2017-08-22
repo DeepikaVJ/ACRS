@@ -16,7 +16,7 @@ let CarDetailComponent = class CarDetailComponent {
         this.http = http;
         this.router = router;
         this.title = "Ad-Hoc Car Repair Service";
-        this.vinSearchFieldValue = 6;
+        this.vinSearchFieldValue = 7;
     }
     showDetails() {
         console.log("Inside cardetail.component.showDetails()!!!!");
