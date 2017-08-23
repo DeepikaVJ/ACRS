@@ -41,50 +41,46 @@ let StatusComponent = class StatusComponent {
     }
     allocateJobs() {
         console.log("inside status.allocateJobs()");
-        /* for (of this.serviceStatus) {
-             let departmentId = this.serviceStatus.serviceMenu.department.departmentId;
-             let noOfTechnicians = this.serviceStatus.serviceMenu.department.numberOfTechnicians;
-             if (departmentId === 1) {
-                 if (this.counter1 < noOfTechnicians) {
-                     this.counter1++;
-                     this.departmentstatus = "Allocated to department One";
-                 }
-                 else {
-                     departmentstatus = "Department Busy";
-                 }
-             }
- 
-             if (departmentId == 2) {
-                 if (counter2 < 4) {
-                     counter1++;
-                     departmentstatus = "Allocated to department Two";
-                 }
-                 else {
-                     departmentstatus = "Department Busy";
-                 }
-             }
- 
-             if (departmentId == 3) {
-                 if (counter3 < 4) {
-                     counter1++;
-                     departmentstatus = "Allocated to department Three";
-                 }
-                 else {
-                     departmentstatus = "Department Busy";
-                 }
-             }
- 
-             if (departmentId == 4) {
-                 if (counter4 < 4) {
-                     counter1++;
-                     departmentstatus = "Allocated to department Four";
-                 }
-                 else {
-                     departmentstatus = "Department Busy";
-                 }
-             }
-         }
- */
+        for (;;) {
+            let departmentId = this.serviceStatus.serviceMenu.department.departmentId;
+            let noOfTechnicians = this.serviceStatus.serviceMenu.department.numberOfTechnicians;
+            if (departmentId === 1) {
+                if (this.counter1 < noOfTechnicians) {
+                    this.counter1++;
+                    this.departmentstatus = "Allocated to department One";
+                }
+                else {
+                    departmentstatus = "Department Busy";
+                }
+            }
+            if (departmentId == 2) {
+                if (counter2 < 4) {
+                    counter1++;
+                    departmentstatus = "Allocated to department Two";
+                }
+                else {
+                    departmentstatus = "Department Busy";
+                }
+            }
+            if (departmentId == 3) {
+                if (counter3 < 4) {
+                    counter1++;
+                    departmentstatus = "Allocated to department Three";
+                }
+                else {
+                    departmentstatus = "Department Busy";
+                }
+            }
+            if (departmentId == 4) {
+                if (counter4 < 4) {
+                    counter1++;
+                    departmentstatus = "Allocated to department Four";
+                }
+                else {
+                    departmentstatus = "Department Busy";
+                }
+            }
+        }
     }
 };
 StatusComponent = __decorate([

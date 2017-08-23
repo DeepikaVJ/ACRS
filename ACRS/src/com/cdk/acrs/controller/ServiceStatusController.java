@@ -21,7 +21,7 @@ public class ServiceStatusController {
 
     @RequestMapping(value = "/status/appointment/{appointmentId}", produces = "application/json", method = RequestMethod.GET)
     public Collection<ServiceStatus> getStatus(@PathVariable String appointmentId) {
-        return serviceStatusDAO.readStatus(appointmentId);
+        return serviceStatusDAO.getServiceListForAppointmentId(appointmentId);
     }
 
     @RequestMapping(value = "/allstatus", produces = "application/json", method = RequestMethod.GET)

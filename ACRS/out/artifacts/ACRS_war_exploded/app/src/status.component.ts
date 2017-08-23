@@ -50,7 +50,7 @@ export class StatusComponent implements OnInit {
 
     private allocateJobs() {
 console.log("inside status.allocateJobs()");
-       /* for (of this.serviceStatus) {
+        for () {
             let departmentId = this.serviceStatus.serviceMenu.department.departmentId;
             let noOfTechnicians = this.serviceStatus.serviceMenu.department.numberOfTechnicians;
             if (departmentId === 1) {
@@ -93,7 +93,6 @@ console.log("inside status.allocateJobs()");
                 }
             }
         }
-*/
     }
 }
 

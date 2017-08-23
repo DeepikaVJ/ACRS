@@ -48,7 +48,7 @@ public class ServiceStatusDAO {
         return serviceStatusList;
     }
 
-    public Collection<ServiceStatus> readStatus(String appointmentId) {
+    public Collection<ServiceStatus> getServiceListForAppointmentId(String appointmentId) {
         return (entityManager.createQuery("from ServiceStatus where appointmentId = " + "'"+appointmentId+"'")).getResultList();
     }
 }
