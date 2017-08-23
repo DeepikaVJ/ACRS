@@ -10,12 +10,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 const core_1 = require("@angular/core");
 const http_1 = require("@angular/http");
-const storage_service_1 = require("./storage.service");
 let Dept1DentingpaintingComponent = class Dept1DentingpaintingComponent {
-    constructor(http, storageService) {
+    constructor(http) {
         this.http = http;
-        this.storageService = storageService;
         this.department1Services = [];
+        //selectedServices: string[];
         // commented when moving from hardcode to dynamic
         /* checkedStatus1: boolean;
          checkedStatus2: boolean;
@@ -62,7 +61,7 @@ Dept1DentingpaintingComponent = __decorate([
         templateUrl: '../partials/dept1.component.html',
         styleUrls: ['../css/dept1.component.style.css'],
     }), 
-    __metadata('design:paramtypes', [http_1.Http, storage_service_1.StorageService])
+    __metadata('design:paramtypes', [http_1.Http])
 ], Dept1DentingpaintingComponent);
 exports.Dept1DentingpaintingComponent = Dept1DentingpaintingComponent;
 //# sourceMappingURL=dept1.dentingpainting.component.js.map

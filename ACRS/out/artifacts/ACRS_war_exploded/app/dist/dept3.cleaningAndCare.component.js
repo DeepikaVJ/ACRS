@@ -10,11 +10,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 const core_1 = require("@angular/core");
 const http_1 = require("@angular/http");
-const storage_service_1 = require("./storage.service");
 let Dept3CleaningAndCareComponent = class Dept3CleaningAndCareComponent {
-    constructor(http, storageService) {
+    constructor(http) {
         this.http = http;
-        this.storageService = storageService;
         this.department3Services = [];
         //@Input('parentData') incomingData: string;
         this.outgoingData = new core_1.EventEmitter();
@@ -48,7 +46,7 @@ Dept3CleaningAndCareComponent = __decorate([
         templateUrl: '../partials/dept3.component.html',
         styleUrls: ['../css/dept1.component.style.css'],
     }), 
-    __metadata('design:paramtypes', [http_1.Http, storage_service_1.StorageService])
+    __metadata('design:paramtypes', [http_1.Http])
 ], Dept3CleaningAndCareComponent);
 exports.Dept3CleaningAndCareComponent = Dept3CleaningAndCareComponent;
 //# sourceMappingURL=dept3.cleaningAndCare.component.js.map

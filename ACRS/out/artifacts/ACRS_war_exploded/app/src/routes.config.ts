@@ -9,12 +9,12 @@ import {Dept1DentingpaintingComponent} from "./dept1.dentingpainting.component";
 import {StatusComponent} from "./status.component";
 
 let routes: Routes = [
-    {path: 'departments/:vrn', component: DepartmentComponent},
+    {path: 'departments/:vin', component: DepartmentComponent},
     {path: 'dept1', component: Dept1DentingpaintingComponent},
     {path: 'dept2', component: Dept2RepairsAndFixesComponent},
     {path: 'dept3', component: Dept3CleaningAndCareComponent},
     {path: 'dept4', component: Dept4PeriodicServicesComponent},
-    {path: 'status', component: StatusComponent},
+    {path: 'status/:appointmentId', component: StatusComponent},
     {path: 'cardetail', component: CarDetailComponent},
     // // {path:'movie/:mid',component:MovieComponent},
     {path: '', redirectTo: '/cardetail', pathMatch: 'full'},

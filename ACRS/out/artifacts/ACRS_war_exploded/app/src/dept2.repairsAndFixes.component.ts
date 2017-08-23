@@ -1,8 +1,6 @@
 import {Component, EventEmitter, Input, OnInit, Output} from "@angular/core";
 import {Http, Headers, RequestOptions} from "@angular/http";
 import {Service} from "./service";
-import {forEach} from "@angular/router/src/utils/collection";
-import {StorageService} from "./storage.service";
 
 
 @Component({
@@ -18,8 +16,10 @@ export class Dept2RepairsAndFixesComponent implements OnInit {
     //@Input('parentData') incomingData: string;
     @Output('childData') outgoingData = new EventEmitter<string>();
     childSampleData: string = "Some child Data";
-    constructor(private http: Http, private storageService: StorageService) {
+
+    constructor(private http: Http) {
     }
+
     ngOnInit(): void {
         console.log("Inside Department2.ngOnInit()!!!!");
         var searchURL = "/rest/department/2/servicemenu";
@@ -30,7 +30,7 @@ export class Dept2RepairsAndFixesComponent implements OnInit {
     }
 
     addToList(e: any) {
-        //this.storageService.add(e.target.id);
+        // this.storageService.add(e.target.id);
         var jaa = e.target.checked;
         console.log("e.target.checked: " + jaa + " operation succesfull");
         let selectedServiceId = e.target.id;

@@ -10,11 +10,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 const core_1 = require("@angular/core");
 const http_1 = require("@angular/http");
-const storage_service_1 = require("./storage.service");
 let Dept2RepairsAndFixesComponent = class Dept2RepairsAndFixesComponent {
-    constructor(http, storageService) {
+    constructor(http) {
         this.http = http;
-        this.storageService = storageService;
         this.department2Services = [];
         //@Input('parentData') incomingData: string;
         this.outgoingData = new core_1.EventEmitter();
@@ -28,7 +26,7 @@ let Dept2RepairsAndFixesComponent = class Dept2RepairsAndFixesComponent {
         this.http.get(searchURL, options).subscribe(res => this.department2Services = res.json());
     }
     addToList(e) {
-        //this.storageService.add(e.target.id);
+        // this.storageService.add(e.target.id);
         var jaa = e.target.checked;
         console.log("e.target.checked: " + jaa + " operation succesfull");
         let selectedServiceId = e.target.id;
@@ -48,7 +46,7 @@ Dept2RepairsAndFixesComponent = __decorate([
         templateUrl: '../partials/dept2.component.html',
         styleUrls: ['../css/dept1.component.style.css'],
     }), 
-    __metadata('design:paramtypes', [http_1.Http, storage_service_1.StorageService])
+    __metadata('design:paramtypes', [http_1.Http])
 ], Dept2RepairsAndFixesComponent);
 exports.Dept2RepairsAndFixesComponent = Dept2RepairsAndFixesComponent;
 //# sourceMappingURL=dept2.repairsAndFixes.component.js.map

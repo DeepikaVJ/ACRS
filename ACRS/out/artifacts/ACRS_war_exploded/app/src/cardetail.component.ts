@@ -15,10 +15,10 @@ export class CarDetailComponent{
     title: string = "Ad-Hoc Car Repair Service";
     car: Car;
     customer: Customer;
-    vinSearchFieldValue: number;
+    vinSearchFieldValue: number=0;
 
     constructor(private http: Http, private router: Router) {
-        this.vinSearchFieldValue=7;
+        this.vinSearchFieldValue=3;
     }
 
     showDetails() {
@@ -37,7 +37,6 @@ export class CarDetailComponent{
         console.log("inside cardetail.routeToMainComponent()");
         console.log(this.car);
         if (this.car) {
-
             var departmentLink = ['/departments',this.vinSearchFieldValue];
             this.router.navigate(departmentLink);
         }

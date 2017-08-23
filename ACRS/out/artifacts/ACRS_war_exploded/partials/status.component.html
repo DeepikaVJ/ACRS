@@ -4,15 +4,20 @@
         <thead>
         <tr>
             <th>Service</th>
+            <th>DepartmentID</th>
             <th>Status</th>
+
         </tr>
         </thead>
         <tbody>
         <tr *ngFor="let statusRecord of serviceStatus">
             <td>{{statusRecord.serviceMenu.serviceName}}</td>
+            <td>{{statusRecord.serviceMenu.department.departmentId}}</td>
             <td *ngIf="!statusRecord.status">Done</td>
             <td *ngIf="statusRecord.status">Queued</td>
         </tr>
         </tbody>
     </table>
 </div>
+
+<div *ngIf="receivedAppointmentId">received appointmentId : {{receivedAppointmentId }}</div>

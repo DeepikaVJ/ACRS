@@ -1,14 +1,7 @@
 import {Component, Directive, OnInit} from "@angular/core";
 import {Http, Headers, RequestOptions} from "@angular/http";
 import {Department} from "./department";
-import {CarComponent} from "./car.component"
-import {Dept1DentingpaintingComponent} from "./dept1.dentingpainting.component";
 import {ActivatedRoute, Router} from "@angular/router";
-import {Car} from "./car";
-import {Service} from "./service";
-import {Observable} from "rxjs/Observable";
-import {StorageService} from "./storage.service";
-import {findIndex} from "rxjs/operator/findIndex";
 import {AppointmentDTO} from "./appointmentDTO";
 
 @Component({
@@ -45,9 +38,9 @@ import {AppointmentDTO} from "./appointmentDTO";
         <br/>
         <div class="summary">
             <h4> Selected Services :</h4>
-            <h2 style="color: aquamarine">{{selectedServiceNames}}</h2>
+            <h2 style="color:#4CAF50">{{selectedServiceNames}}</h2>
             <h4> Total Price:</h4>
-            <h2 style="color: aquamarine">{{totalPrice}}</h2>
+            <h2 style="color: #4CAF50">{{totalPrice}}</h2>
         </div>
         <!--<h2>{{successMessage}}</h2>-->
         <!--<h2>{{errorMessage}}</h2>-->
@@ -67,14 +60,15 @@ export class DepartmentComponent implements OnInit {
     private selectedServiceIds: number[] = [];
     private selectedServiceNames: string[] = [];
     private totalPrice: number = 0;
-    private successMessage: string = '';
+    private appointmentId: number=0;
     private errorMessage: string = '';
+    private receivedVin:number=0;
 
 
-    constructor(private http: Http, private activatedRoute: ActivatedRoute, private storageService: StorageService, private router: Router) {
+    constructor(private http: Http, private activatedRoute: ActivatedRoute, private router: Router) {
         this.activatedRoute.params.subscribe((receivedData) => {
-            var receivedVin: number = parseInt(receivedData['vrn']);
-            console.log("receivedVin: " + receivedVin);
+            this.receivedVin = parseInt(receivedData['vin']);
+            console.log("receivedVin: " + this.receivedVin);
         })
     }
 
@@ -116,7 +110,7 @@ export class DepartmentComponent implements OnInit {
     }
 
     getServiceList() {
-
+        console.log("ALL SERVICE IDs AND NAMES: ");
         for (let id of this.selectedServiceIds) {
             console.log(" " + id);
         }
@@ -129,7 +123,6 @@ export class DepartmentComponent implements OnInit {
     populateSelectedServices(serviceData: any) {
 
         this.addToServiceList(serviceData.target.id, serviceData.target.name, serviceData.target.value);
-        this.getServiceList();
         /* console.log("===========================================================");
          let id = serviceData.target.id;
          console.log("data from child: " + id);
@@ -148,20 +141,20 @@ export class DepartmentComponent implements OnInit {
 
         var requestHeaders = new Headers({'Content-Type': 'application/json'});
         var options = new RequestOptions({headers: requestHeaders});
-        this.appointmentDTO = new AppointmentDTO(2, this.totalPrice, this.selectedServiceIds, this.selectedServiceNames);
+        this.appointmentDTO = new AppointmentDTO(this.receivedVin, this.totalPrice, this.selectedServiceIds, this.selectedServiceNames);
 
-        //this.http.post(addUrl,this.car,options).subscribe(res => this.successMessage = res.toString());
+        //this.http.post(addUrl,this.car,options).subscribe(res => this.appointmentId = res.toString());
         this.http.post(addUrl, this.appointmentDTO, options).subscribe(
-            res => {
-                this.successMessage = res.toString();
-                console.log(res.text());
+            AppointmentId => {
+                this.appointmentId = parseInt(AppointmentId.text());
+                console.log("AppointmentId Generated: "+AppointmentId.text());
                 this.errorMessage = ""
-                var statusLink = ['/status'];
+                var statusLink = ['/status',this.appointmentId];
                 this.router.navigate(statusLink);
             },
             error => {
                 this.errorMessage = <any>error;
-                this.successMessage = ""
+                this.appointmentId = 0;
             });
 
     }

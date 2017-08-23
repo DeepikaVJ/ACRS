@@ -1,8 +1,7 @@
 import {Component, EventEmitter, Input, OnInit, Output} from "@angular/core";
 import {Http, Headers, RequestOptions} from "@angular/http";
 import {Service} from "./service";
-import {forEach} from "@angular/router/src/utils/collection";
-import {StorageService} from "./storage.service";
+
 
 
 @Component({
@@ -18,7 +17,7 @@ export class Dept3CleaningAndCareComponent implements OnInit {
     //@Input('parentData') incomingData: string;
     @Output('childData') outgoingData = new EventEmitter<string>();
     childSampleData: string = "Some child Data";
-    constructor(private http: Http, private storageService: StorageService) {
+    constructor(private http: Http) {
     }
     ngOnInit(): void {
         console.log("Inside Department3.ngOnInit()!!!!");

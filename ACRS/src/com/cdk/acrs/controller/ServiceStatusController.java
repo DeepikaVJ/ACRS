@@ -15,8 +15,13 @@ public class ServiceStatusController {
     ServiceStatusDAO serviceStatusDAO;
 
     @RequestMapping(value = "/status/appointment/{appointmentId}/service/{serviceId}", produces = "application/json", method = RequestMethod.GET)
-    public Collection<ServiceStatus> getStatus(@PathVariable String appointmentId, @PathVariable String serviceId) {
-        return serviceStatusDAO.readStatus(appointmentId, serviceId);
+    public Collection<ServiceStatus> getStatusOfSingleService(@PathVariable String appointmentId, @PathVariable String serviceId) {
+        return serviceStatusDAO.readStatusOfSingleService(appointmentId, serviceId);
+    }
+
+    @RequestMapping(value = "/status/appointment/{appointmentId}", produces = "application/json", method = RequestMethod.GET)
+    public Collection<ServiceStatus> getStatus(@PathVariable String appointmentId) {
+        return serviceStatusDAO.readStatus(appointmentId);
     }
 
     @RequestMapping(value = "/allstatus", produces = "application/json", method = RequestMethod.GET)

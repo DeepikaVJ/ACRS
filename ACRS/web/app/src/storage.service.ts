@@ -1,5 +1,5 @@
 import {Service} from "./service";
-
+//not used, found better method
 export class StorageService {
 
     private serviceHolder: Service = null;
@@ -7,7 +7,7 @@ export class StorageService {
     private id: number;
 
     constructor() {
-        console.log("Inside StorageService.constructor()");
+        //console.log("Inside StorageService.constructor()");
     }
     /*addToServiceList(serviceId: number) {
         let flag: boolean = false;

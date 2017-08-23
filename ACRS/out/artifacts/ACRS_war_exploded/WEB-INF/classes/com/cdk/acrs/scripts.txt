@@ -1,0 +1,62 @@
+Insert into customer_detail values (1,"Pune",911226,"Rakesh");
+Insert into customer_detail values (2,"Pune",946412,"Suresh");
+Insert into customer_detail values (3,"Pune",941111,"Mahesh");
+Insert into customer_detail values (4,"Pune",244422,"Nitesh");
+Insert into customer_detail values (5,"Pune",911764,"Rajan");
+Insert into customer_detail values (6,"Pune",911144,"Sameer");
+Insert into customer_detail values (7,"Pune",911999,"Ishan");
+Insert into customer_detail values (8,"Pune",911344,"Sidharth");
+Insert into customer_detail values (9,"Pune",911111,"Raju");
+Insert into customer_detail values (10,"Pune",911233,"Binay");
+Insert into customer_detail values (11,"Pune",911242,"Vinay");
+Insert into customer_detail values (12,"Pune",911022,"Varun");
+Insert into customer_detail values (13,"Pune",911262,"Saransh");
+Insert into customer_detail values (14,"Pune",914522,"Sushant");
+Insert into customer_detail values (15,"Pune",978912,"Kapil");
+Insert into customer_detail values (16,"Pune",956712,"Utkarsh");
+Insert into customer_detail values (17,"Pune",911332,"Piyush");
+Insert into customer_detail values (18,"Pune",911225,"Aditya");
+Insert into customer_detail values (19,"Pune",911225,"Ankit");
+Insert into customer_detail values (20,"Pune",911224,"Shlok");
+
+Insert into car_detail values (1,"Audi","A6","Lxi",2017,1);
+Insert into car_detail values (2,"BMW","B1","Lxi",2011,2);
+Insert into car_detail values (3,"Ferrari","F8","Lxi",2016,3);
+Insert into car_detail values (4,"Mercedes","M3","Vdi",2013,4);
+Insert into car_detail values (5,"Toyota","T9","Lxi",2011,5);
+Insert into car_detail values (6,"Maruti","M2","Vdi",2017,6);
+Insert into car_detail values (7,"Suzuki","S9","Lxi",2013,7);
+Insert into car_detail values (8,"Nissan","N1","Vdi",2014,8);
+Insert into car_detail values (9,"Audi","A7","Vdi",2015,9);
+Insert into car_detail values (10,"Lamborghini","L9","",2013,10);
+Insert into car_detail values (11,"Ferrari","F9","Lxi",2016,11);
+Insert into car_detail values (12,"Maruti","M3","Vdi",2013,12);
+Insert into car_detail values (13,"Suzuki","S1","Vdi",2017,13);
+Insert into car_detail values (14,"Mercedes","M7","Lxi",2012,14);
+Insert into car_detail values (15,"BMW","B8","Vdi",2016,15);
+Insert into car_detail values (16,"Opel","O4","Lxi",2012,16);
+
+insert into departments values(1,"Denting Painting",4);
+insert into departments values(2,"Repairs and Fixes",4);
+insert into departments values(3,"Cleaning and Care",4);
+insert into departments values(4,"Periodic Services",4);
+
+insert into servicemenu values (1,1000,"Denting",1);
+insert into servicemenu values (2,1500,"Painting",1);
+insert into servicemenu values (3,1600,"Scratch Removal",1);
+insert into servicemenu values (4,1800,"Part Replacement",1);
+
+Insert into servicemenu values(5,1000,"Brake pads",2);
+Insert into servicemenu values(6,1000,"Steering Control",2);
+Insert into servicemenu values(7,1000,"Clutch",2);
+Insert into servicemenu values(8,1000,"Tyre",2);
+
+Insert into servicemenu values(9,2000,"Internal cleaning",3);
+Insert into servicemenu values(10,3000,"External cleaning",3);
+Insert into servicemenu values(11,5500,"Overall cleaning",3);
+Insert into servicemenu values(12,1100,"Parts cleaning",3);
+
+Insert into servicemenu values(13,1400,"Wheel alignment",4);
+Insert into servicemenu values(14,600,"Engine oil",4);
+Insert into servicemenu values(15,1000,"Spark plug",4);
+Insert into servicemenu values(16,1200,"Coolant",4);

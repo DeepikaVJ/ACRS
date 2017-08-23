@@ -11,24 +11,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 const core_1 = require("@angular/core");
 const http_1 = require("@angular/http");
 const router_1 = require("@angular/router");
-const storage_service_1 = require("./storage.service");
 const appointmentDTO_1 = require("./appointmentDTO");
 let DepartmentComponent = class DepartmentComponent {
-    constructor(http, activatedRoute, storageService, router) {
+    constructor(http, activatedRoute, router) {
         this.http = http;
         this.activatedRoute = activatedRoute;
-        this.storageService = storageService;
         this.router = router;
         this.title = "Department Detail";
         this.departments = [];
         this.selectedServiceIds = [];
         this.selectedServiceNames = [];
         this.totalPrice = 0;
-        this.successMessage = '';
+        this.appointmentId = 0;
         this.errorMessage = '';
+        this.receivedVin = 0;
         this.activatedRoute.params.subscribe((receivedData) => {
-            var receivedVin = parseInt(receivedData['vrn']);
-            console.log("receivedVin: " + receivedVin);
+            this.receivedVin = parseInt(receivedData['vin']);
+            console.log("receivedVin: " + this.receivedVin);
         });
     }
     ngOnInit() {
@@ -65,6 +64,7 @@ let DepartmentComponent = class DepartmentComponent {
         }
     }
     getServiceList() {
+        console.log("ALL SERVICE IDs AND NAMES: ");
         for (let id of this.selectedServiceIds) {
             console.log(" " + id);
         }
@@ -75,7 +75,6 @@ let DepartmentComponent = class DepartmentComponent {
     }
     populateSelectedServices(serviceData) {
         this.addToServiceList(serviceData.target.id, serviceData.target.name, serviceData.target.value);
-        this.getServiceList();
         /* console.log("===========================================================");
          let id = serviceData.target.id;
          console.log("data from child: " + id);
@@ -90,17 +89,17 @@ let DepartmentComponent = class DepartmentComponent {
         let addUrl = "/rest/appointment/add";
         var requestHeaders = new http_1.Headers({ 'Content-Type': 'application/json' });
         var options = new http_1.RequestOptions({ headers: requestHeaders });
-        this.appointmentDTO = new appointmentDTO_1.AppointmentDTO(2, this.totalPrice, this.selectedServiceIds, this.selectedServiceNames);
-        //this.http.post(addUrl,this.car,options).subscribe(res => this.successMessage = res.toString());
-        this.http.post(addUrl, this.appointmentDTO, options).subscribe(res => {
-            this.successMessage = res.toString();
-            console.log(res.text());
+        this.appointmentDTO = new appointmentDTO_1.AppointmentDTO(this.receivedVin, this.totalPrice, this.selectedServiceIds, this.selectedServiceNames);
+        //this.http.post(addUrl,this.car,options).subscribe(res => this.appointmentId = res.toString());
+        this.http.post(addUrl, this.appointmentDTO, options).subscribe(AppointmentId => {
+            this.appointmentId = parseInt(AppointmentId.text());
+            console.log("AppointmentId Generated: " + AppointmentId.text());
             this.errorMessage = "";
-            var statusLink = ['/status'];
+            var statusLink = ['/status', this.appointmentId];
             this.router.navigate(statusLink);
         }, error => {
             this.errorMessage = error;
-            this.successMessage = "";
+            this.appointmentId = 0;
         });
     }
 };
@@ -139,9 +138,9 @@ DepartmentComponent = __decorate([
         <br/>
         <div class="summary">
             <h4> Selected Services :</h4>
-            <h2 style="color: aquamarine">{{selectedServiceNames}}</h2>
+            <h2 style="color:#4CAF50">{{selectedServiceNames}}</h2>
             <h4> Total Price:</h4>
-            <h2 style="color: aquamarine">{{totalPrice}}</h2>
+            <h2 style="color: #4CAF50">{{totalPrice}}</h2>
         </div>
         <!--<h2>{{successMessage}}</h2>-->
         <!--<h2>{{errorMessage}}</h2>-->
@@ -151,7 +150,7 @@ DepartmentComponent = __decorate([
     `,
         styleUrls: ['../css/department.component.styles.css']
     }), 
-    __metadata('design:paramtypes', [http_1.Http, router_1.ActivatedRoute, storage_service_1.StorageService, router_1.Router])
+    __metadata('design:paramtypes', [http_1.Http, router_1.ActivatedRoute, router_1.Router])
 ], DepartmentComponent);
 exports.DepartmentComponent = DepartmentComponent;
 //# sourceMappingURL=department.component.js.map

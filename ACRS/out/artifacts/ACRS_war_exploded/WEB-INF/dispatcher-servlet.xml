@@ -17,7 +17,7 @@ http://www.springframework.org/schema/tx http://www.springframework.org/schema/t
 
     <bean id="mysqldsn" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="driverClassName" value="com.mysql.jdbc.Driver" />
-        <property name="url" value="jdbc:mysql://139.126.131.30:3306/acrs?useSSL=false" />
+        <property name="url" value="jdbc:mysql://localhost:3306/acrs?useSSL=false" />
         <property name="username" value="root" />
         <property name="password" value="root" />
     </bean>

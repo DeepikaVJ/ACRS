@@ -37,14 +37,14 @@ public class AppointmentController {
         int vin = appointmentRecordInputDTO.getVin();
         double price = appointmentRecordInputDTO.getTotalPrice();
         AppointmentDTO appointmentDTO = new AppointmentDTO(vin,price,1);
-        int appointmentId = appointmentDAO.save(appointmentDTO);
+        Integer appointmentId = appointmentDAO.save(appointmentDTO);
         ServiceStatusDTO serviceStatusDTO = null;
         int size = appointmentRecordInputDTO.getSelectedServiceIds().length;
         for (int i = 0; i < size; i++) {
             serviceStatusDTO = new ServiceStatusDTO(appointmentRecordInputDTO.getSelectedServiceIds()[i],appointmentId, 1);
             int serviceStatusId = serviceStatusDAO.save(serviceStatusDTO);
         }
-        return "Appointment with appointmentId '"+appointmentId+" ' added successfully!";
+        return  appointmentId.toString();
     }
 
     @RequestMapping(value = "/appointment/{appointmentId}/update/{status}", produces = "application/json" ,method = RequestMethod.PUT)

@@ -1,8 +1,6 @@
 import {Component, EventEmitter, Input, OnInit, Output} from "@angular/core";
 import {Http, Headers, RequestOptions} from "@angular/http";
 import {Service} from "./service";
-import {forEach} from "@angular/router/src/utils/collection";
-import {StorageService} from "./storage.service";
 
 
 @Component({
@@ -12,7 +10,7 @@ import {StorageService} from "./storage.service";
 })
 export class Dept1DentingpaintingComponent implements OnInit {
     department1Services: Service[] = [];
-    selectedServices: string[];
+    //selectedServices: string[];
 
     // commented when moving from hardcode to dynamic
     /* checkedStatus1: boolean;
@@ -23,7 +21,7 @@ export class Dept1DentingpaintingComponent implements OnInit {
     //@Input('parentData') incomingData: string;
     @Output('childData') outgoingData = new EventEmitter<string>();
     childSampleData: string = "Some child Data";
-    constructor(private http: Http, private storageService: StorageService) {
+    constructor(private http: Http) {
 
     }
 

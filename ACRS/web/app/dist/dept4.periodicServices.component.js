@@ -10,11 +10,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 const core_1 = require("@angular/core");
 const http_1 = require("@angular/http");
-const storage_service_1 = require("./storage.service");
 let Dept4PeriodicServicesComponent = class Dept4PeriodicServicesComponent {
-    constructor(http, storageService) {
+    constructor(http) {
         this.http = http;
-        this.storageService = storageService;
         this.department4Services = [];
         //@Input('parentData') incomingData: string;
         this.outgoingData = new core_1.EventEmitter();
@@ -50,7 +48,7 @@ Dept4PeriodicServicesComponent = __decorate([
         templateUrl: '../partials/dept4.component.html',
         styleUrls: ['../css/dept1.component.style.css'],
     }), 
-    __metadata('design:paramtypes', [http_1.Http, storage_service_1.StorageService])
+    __metadata('design:paramtypes', [http_1.Http])
 ], Dept4PeriodicServicesComponent);
 exports.Dept4PeriodicServicesComponent = Dept4PeriodicServicesComponent;
 //# sourceMappingURL=dept4.periodicServices.component.js.map

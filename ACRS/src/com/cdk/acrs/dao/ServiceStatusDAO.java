@@ -21,7 +21,7 @@ public class ServiceStatusDAO {
 
 
     @Transactional
-    public Collection<ServiceStatus> readStatus(String appointmentId, String serviceId) {
+    public Collection<ServiceStatus> readStatusOfSingleService(String appointmentId, String serviceId) {
         return (entityManager.createQuery("from ServiceStatus where serviceId=" + "'" + serviceId + "'" + " and appointmentId = " + "'"+appointmentId+"'")).getResultList();
     }
 
@@ -46,5 +46,9 @@ public class ServiceStatusDAO {
     public List<ServiceStatus> readAllServices() {
         List serviceStatusList = (entityManager.createQuery("from ServiceStatus")).getResultList();
         return serviceStatusList;
+    }
+
+    public Collection<ServiceStatus> readStatus(String appointmentId) {
+        return (entityManager.createQuery("from ServiceStatus where appointmentId = " + "'"+appointmentId+"'")).getResultList();
     }
 }
