@@ -1,6 +1,6 @@
 package com.cdk.acrs.dao;
 
-import com.cdk.acrs.model.ServiceMenu;
+import com.cdk.acrs.model.Service;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -15,7 +15,7 @@ public class ServiceMenuDAO {
     EntityManager entityManager;
 
     @Transactional
-    public Collection<ServiceMenu> readServices(Integer departmentId) {
-        return (entityManager.createQuery("from ServiceMenu where =" + "'" + departmentId + "'")).getResultList();
+    public Collection<Service> readServices(Integer departmentId) {
+        return (entityManager.createQuery("from Service where =" + "'" + departmentId + "'")).getResultList();
     }
 }

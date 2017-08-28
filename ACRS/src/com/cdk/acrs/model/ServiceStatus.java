@@ -17,7 +17,7 @@ public class ServiceStatus {
 
     @ManyToOne(cascade = CascadeType.PERSIST, fetch = FetchType.EAGER)
     @JoinColumn(name = "serviceId")
-    ServiceMenu serviceMenu;
+    Service service;
 
     @Column
     int status;
@@ -25,16 +25,16 @@ public class ServiceStatus {
     public ServiceStatus() {
     }
 
-    public ServiceStatus(Appointment appointment, ServiceMenu serviceMenu, int status) {
+    public ServiceStatus(Appointment appointment, Service service, int status) {
         this.appointment = appointment;
-        this.serviceMenu = serviceMenu;
+        this.service = service;
         this.status = status;
     }
 
-    public ServiceStatus(int statusId, Appointment appointment, ServiceMenu serviceMenu, int status) {
+    public ServiceStatus(int statusId, Appointment appointment, Service service, int status) {
         this.statusId = statusId;
         this.appointment = appointment;
-        this.serviceMenu = serviceMenu;
+        this.service = service;
         this.status = status;
     }
 
@@ -54,12 +54,12 @@ public class ServiceStatus {
         this.appointment = appointment;
     }
 
-    public ServiceMenu getServiceMenu() {
-        return serviceMenu;
+    public Service getService() {
+        return service;
     }
 
-    public void setServiceMenu(ServiceMenu serviceMenu) {
-        this.serviceMenu = serviceMenu;
+    public void setService(Service service) {
+        this.service = service;
     }
 
     public int getStatus() {

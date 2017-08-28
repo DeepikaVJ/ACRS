@@ -1,11 +1,10 @@
 "use strict";
 class ServiceStatus {
-    constructor(statusId, status, appointmentId, serviceId, serviceMenu) {
+    constructor(statusId, status, appointmentId, service) {
         this.statusId = statusId;
         this.status = status;
         this.appointmentId = appointmentId;
-        this.serviceId = serviceId;
-        this.serviceMenu = serviceMenu;
+        this.service = service;
     }
 }
 exports.ServiceStatus = ServiceStatus;

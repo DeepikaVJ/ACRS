@@ -1,23 +1,39 @@
-<h1>Service Status</h1>
+<h1 style="margin: auto;font-weight: bold">Service Status</h1>
+<h1 *ngIf="receivedAppointmentId">received appointmentId : {{receivedAppointmentId }}</h1>
 <div class="table-responsive">
-    <table class="table-fill">
+    <table style="float: left;margin-left: 5%" class="table-fill">
         <thead>
         <tr>
+            <th>Service ID</th>
             <th>Service</th>
             <th>DepartmentID</th>
+            <th>numberOfTechnicians</th>
             <th>Status</th>
+            <th>StatusInWords</th>
 
         </tr>
         </thead>
         <tbody>
-        <tr *ngFor="let statusRecord of serviceStatus">
-            <td>{{statusRecord.serviceMenu.serviceName}}</td>
-            <td>{{statusRecord.serviceMenu.department.departmentId}}</td>
-            <td *ngIf="!statusRecord.status">Done</td>
-            <td *ngIf="statusRecord.status">Queued</td>
+        <tr *ngFor="let statusRecord of serviceStatusList">
+            <td>{{statusRecord.service.serviceId}}</td>
+            <td>{{statusRecord.service.serviceName}}</td>
+            <td>{{statusRecord.service.department.departmentId}}</td>
+            <td>{{statusRecord.service.department.numberOfTechnicians}}</td>
+            <td>{{statusRecord.status}}</td>
+            <td *ngIf="statusRecord.status===0">Done</td>
+            <td *ngIf="statusRecord.status===1">Queued</td>
+        </tbody>
+    </table>
+
+    <table style="float: left;margin-left: 5%" id="logTable" class="table-fill">
+        <thead>
+        <tr>
+            <th>Department Allocation Status</th>
+
         </tr>
+        </thead>
+        <tbody>
         </tbody>
     </table>
 </div>
 
-<div *ngIf="receivedAppointmentId">received appointmentId : {{receivedAppointmentId }}</div>

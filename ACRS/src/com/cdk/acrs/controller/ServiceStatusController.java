@@ -20,7 +20,7 @@ public class ServiceStatusController {
     }
 
     @RequestMapping(value = "/status/appointment/{appointmentId}", produces = "application/json", method = RequestMethod.GET)
-    public Collection<ServiceStatus> getStatus(@PathVariable String appointmentId) {
+    public Collection<ServiceStatus> getAppointmentStatus(@PathVariable String appointmentId) {
         return serviceStatusDAO.getServiceListForAppointmentId(appointmentId);
     }
 
@@ -35,9 +35,15 @@ public class ServiceStatusController {
         return value;
     }
 
-    @RequestMapping(value = "/appointment/{appointmentId}/service/{serviceId}/update/{status}", produces = "text/plain" ,method = RequestMethod.PUT)
+    @RequestMapping(value = "/appointment/{appointmentId}/service/{serviceId}/update/{status}", produces = "text/plain", method = RequestMethod.PUT)
     public String updateServiceStatus(@PathVariable Integer appointmentId, @PathVariable Integer serviceId, @PathVariable Integer status) {
-        int updatedStatus = serviceStatusDAO.modifyStatus(appointmentId, serviceId, status);
-        return updatedStatus + "";
+        String updatedStatus = serviceStatusDAO.modifyStatus(appointmentId, serviceId, status);
+        return updatedStatus;
+    }
+
+    @RequestMapping(value = "/updateStatus/statusID/{statusID}/status/{status}", produces = "text/plain", method = RequestMethod.PUT)
+    public String updateServiceStatus(@PathVariable Integer statusID, @PathVariable Integer status) {
+        String updatedStatus = serviceStatusDAO.modifyStatus(statusID, status);
+        return updatedStatus;
     }
 }

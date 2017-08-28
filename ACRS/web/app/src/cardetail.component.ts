@@ -18,7 +18,7 @@ export class CarDetailComponent{
     vinSearchFieldValue: number=0;
 
     constructor(private http: Http, private router: Router) {
-        this.vinSearchFieldValue=3;
+        this.vinSearchFieldValue=5;
     }
 
     showDetails() {

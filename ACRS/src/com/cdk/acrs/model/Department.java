@@ -15,6 +15,14 @@ public class Department {
     @Column(nullable = false,length = 20)
     int numberOfTechnicians;
 
+    public int getNumberOfTechnicians() {
+        return numberOfTechnicians;
+    }
+
+    public void setNumberOfTechnicians(int numberOfTechnicians) {
+        this.numberOfTechnicians = numberOfTechnicians;
+    }
+
     public Department() {
     }
 
@@ -45,11 +53,5 @@ public class Department {
         this.name = name;
     }
 
-    public int getNumberOftechnicians() {
-        return numberOfTechnicians;
-    }
 
-    public void setNumberOftechnicians(int numberOfTechnicians) {
-        this.numberOfTechnicians = numberOfTechnicians;
-    }
 }
